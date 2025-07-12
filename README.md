@@ -31,7 +31,9 @@
 
 ## 🛎️ Atualizações principais deste commit
 
-### `src/components/RealClassVideo:` Adicionado a sessão para mostrar um pouco de uma aula real gravada. Utilizando o youtube e a URL vem através do .env
+### `src/Sections:` Criado a pasta responsável por agrupar todas as nossas seções
+
+### `src/Sections:` Também criado a pasta sections para guardar os nossos hooks das seções
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 
@@ -60,19 +62,24 @@
 - `./src/assets:` Onde está todas as fotos e arquivos estáticos que vão ser usadas no projeto.
 
 - `./src/components:` Onde está os componentes que serão reutilizados em diversas partes do código. Neste projeto temos os components:
-    - AboutWhoAmI: Este é o primeiro componente da sessão de "Sobre" onde apresentamos quem é a Ana Flávia Guarda.
     - Buttons: Responsável pelos botões do site.
     - Header: Cabeçalho que se encontra no canto superior da landing page
-    - MainSection: Onde temos o primeiro componente da tela
+
+- `./src/Sections:` Pasta responsável por agrupar todas as nossas seções:
+    - AboutWhoAmI: Esta é a seção de "Sobre" onde apresentamos quem é a Ana Flávia Guarda.
+    - MainSection: Onde temos a primeira seção da tela
         - TypingWords: Criado somente para utilizar o 'use client' em uma parte menor do código, componente para a troca de palavras abaixo do subtitulo
     - RealClassVideo: Adicionado a sessão para mostrar um pouco de uma aula real gravada. Utilizando o youtube e a URL vem através do .env
-    - WhyTakeClassWithMe: Componente onde mostra ao usuário os benefícios que a metodologia usada pela Ana é realmente útil, trazendo consigo dados real e com link para visualização completa.
+    - WhyTakeClassWithMe: Seção onde mostra ao usuário os benefícios que a metodologia usada pela Ana é realmente útil, trazendo consigo dados real e com link para visualização completa.
 
-- `./src/hooks:` Está nossos hooks personalizados com as partes lógicas de todos os nossos componentes:
-    - useAboutWhoAmI: Hook que controla texto "Infinito" que fica passando logo no topo, escrito "Ana Guarda".
-    - useButtonDarkMode: Gerencia se o usuário escolheu o tema escuro ou claro da landing page
-    - useHeader: Destinado ao header, contendo a lógica para mostrar / esconder as opções de roteamento pela página
-    - useMainSection: Para a troca de palavras abaixo do subtitulo, fazendo a animação de "criar" / "apagar" as palavras letra por letra
+- `./src/hooks:` Está nossos hooks personalizados com as partes lógicas:
+    - components: Pasta que armazena todas as partes lógicas dos componentes:
+        - useButtons: Armazena nossas lógicas de botões
+            - useButtonDarkMode: Gerencia se o usuário escolheu o tema escuro ou claro da landing page
+        - useHeader: Destinado ao header, contendo a lógica para mostrar / esconder as opções de roteamento pela página
+    - Sections: Pasta que armazena todas as partes lógicas das seções:
+        - useAboutWhoAmI: Hook que controla texto "Infinito" que fica passando logo no topo, escrito "Ana Guarda".
+        - useMainSection: Para a troca de palavras abaixo do subtitulo, fazendo a animação de "criar" / "apagar" as palavras letra por letra
 
 - `./src/services:` Pasta que contém as funcionalidades de serviço. Temos um único arquivo chamado "ScrollAnimation" que serve somente para criarmos a configuração do aos ( Responsável pela animação ao rolar o scroll na landing page ) e exportar para o page.tsx, uma vez que assim podemos usar a diretiva 'use client' no arquivo e não no app principal da aplicação.
 

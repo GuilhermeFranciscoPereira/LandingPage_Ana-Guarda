@@ -1,5 +1,5 @@
 import TypingWords from './TypingWords';
-import styles from '@/components/MainSection/MainSection.module.css';
+import styles from '@/Sections/MainSection/MainSection.module.css';
 
 export default function MainSection(): React.ReactElement {
     return (

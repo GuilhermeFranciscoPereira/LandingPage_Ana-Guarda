@@ -1,6 +1,6 @@
 'use client';
-import useMainSection from '@/hooks/useMainSection';
-import styles from '@/components/MainSection/MainSection.module.css';
+import useMainSection from '@/hooks/Sections/useMainSection';
+import styles from '@/Sections/MainSection/MainSection.module.css';
 
 export default function TypingWords(): React.ReactElement {
   const { currentWord } = useMainSection();

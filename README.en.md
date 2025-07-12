@@ -30,7 +30,9 @@
 
 ## 🛎️ Key updates in this commit
 
-### `src/components/RealClassVideo:` RealClassVideo: Added a session to show a bit of a real recorded class. Using YouTube and the URL comes through .env
+### `src/Sections:` Created the folder responsible for grouping all our sections
+
+### `src/Sections:` Also created the sections folder to store our section hooks
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 
@@ -58,19 +60,25 @@
 
 - `./src/assets:` Where are all the photos and static files that will be used in the project.
 
-- `./src/components:` This is where the components that will be reused in various parts of the code are located. In this project, we have the following components:
-    - AboutWhoAmI: This is the first component of the "About" section, where we introduce who Ana Flávia Guarda is.
-    - Buttons: Responsible for the website's buttons. - Header: Header located at the top of the landing page
-    - MainSection: Where we have the first component on the screen
-        - TypingWords: Created solely to utilize the 'use client' in a smaller part of the code, this component is for changing words below the subtitle.
-    - RealClassVideo: Added a session to show a bit of a real recorded class. Using YouTube and the URL comes through .env
-    - WhyTakeClassWithMe: Component that shows the user the benefits of the methodology used by Ana, providing real data and a link for full visualization.
+- `./src/components`: This is where the components will be reused in various parts of the code. In this project, we have the following components:
+    - Buttons: Responsible for the website's buttons.
+    - Header: Header located in the top corner of the landing page.
 
-- `./src/hooks:` Contains our custom hooks with the logical parts of all our components:
-    - useAboutWhoAmI: Hook that controls the "Infinite" text that scrolls right at the top, written "Ana Guarda."
-    - useButtonDarkMode: Manages whether the user has chosen the dark or light theme for the landing page.
-    - useHeader: Intended for the header, containing the logic to show/hide the page's routing options.
-    - useMainSection: For changing words below the subtitle, creating the animation to "create"/"delete" words letter by letter.
+- `./src/Sections:` Folder responsible for grouping all our sections:
+    - AboutWhoAmI: This is the "About" section where we introduce who Ana Flávia Guarda is.
+    - MainSection: This is where we have the first section of the screen.
+        - TypingWords: Created solely to use the 'use client' in a smaller part of the code, a component for changing words below the subtitle.
+    - RealClassVideo: Added a section to show a glimpse of a real recorded class. Using YouTube and the URL comes through .env.
+    - WhyTakeClassWithMe: A section that shows the user the benefits of Ana's methodology, providing real data and a link for full viewing.
+
+- `./src/hooks:` This is our custom hooks with the logical parts:
+    - components: Folder that stores all the logical parts of the components:
+        - useButtons: Stores our button logic:
+            - useButtonDarkMode: Manages whether the user has chosen the dark or light theme for the landing page:
+        - useHeader: Intended for the header, containing the logic to show/hide the page's navigation options:
+    - Sections: Folder that stores all the logical parts of the sections:
+        - useAboutWhoAmI: Hook that controls the "Infinite" text that scrolls right at the top, written "Ana Guarda".
+        - useMainSection: For changing the words below the subtitle, creating the animation of "creating"/"deleting" the words letter by letter.
 
 - `./src/services:` Folder containing the service functionalities. We have a single file called "ScrollAnimation" that serves only to create the aos configuration (responsible for the animation when scrolling on the landing page) and export it to page.tsx, since this way we can use the 'use client' directive in the file and not in the main application.
 

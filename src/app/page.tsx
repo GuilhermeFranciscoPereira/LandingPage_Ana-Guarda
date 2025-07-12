@@ -1,9 +1,9 @@
 import Header from "@/components/Header";
-import AboutWhoAmI from "@/components/AboutWhoAmI";
-import MainSection from "@/components/MainSection";
+import AboutWhoAmI from "@/Sections/AboutWhoAmI";
+import MainSection from "@/Sections/MainSection";
 import ScrollAnimation from "@/services/ScrollAnimation";
-import RealClassVideo from "@/components/RealClassVideo";
-import WhyTakeClassWithMe from "@/components/WhyTakeClassWithMe";
+import RealClassVideo from "@/Sections/RealClassVideo";
+import WhyTakeClassWithMe from "@/Sections/WhyTakeClassWithMe";
 
 export default function Home(): React.ReactElement {
   return (

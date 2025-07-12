@@ -1,6 +1,6 @@
 import { MdChatBubble } from 'react-icons/md';
 import { FaComments, FaChalkboardTeacher, FaHandshake } from 'react-icons/fa';
-import styles from '@/components/WhyTakeClassWithMe/WhyTakeClassWithMe.module.css';
+import styles from '@/Sections/WhyTakeClassWithMe/WhyTakeClassWithMe.module.css';
 
 export default function WhyTakeClassWithMe(): React.ReactElement {
     return (

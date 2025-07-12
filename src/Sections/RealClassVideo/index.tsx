@@ -1,4 +1,4 @@
-import styles from '@/components/RealClassVideo/RealClassVideo.module.css';
+import styles from '@/Sections/RealClassVideo/RealClassVideo.module.css';
 
 export default function RealClassVideo(): React.ReactElement {
     return (

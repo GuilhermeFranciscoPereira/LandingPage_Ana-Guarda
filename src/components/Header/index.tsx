@@ -1,5 +1,5 @@
 'use client';
-import useHeader from '@/hooks/Header';
+import useHeader from '@/hooks/components/useHeader';
 import styles from '@/components/Header/Header.module.css';
 import ButtonDarkMode from '@/components/Buttons/ButtonDarkMode/index';
 

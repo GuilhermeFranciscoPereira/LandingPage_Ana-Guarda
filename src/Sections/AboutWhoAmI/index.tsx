@@ -1,8 +1,8 @@
 'use client';
 import Image from 'next/image';
-import useAboutWhoAmI from '@/hooks/useAboutWhoAmI';
+import useAboutWhoAmI from '@/hooks/Sections/useAboutWhoAmI';
 import photo_anaFlaviaGuarda from '@/assets/photo_anaFlaviaGuarda.jpg';
-import styles from '@/components/AboutWhoAmI/AboutWhoAmI.module.css';
+import styles from '@/Sections/AboutWhoAmI/AboutWhoAmI.module.css';
 
 export default function AboutWhoAmI(): React.ReactElement {
     useAboutWhoAmI();
