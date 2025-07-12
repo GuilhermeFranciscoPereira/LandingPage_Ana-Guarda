@@ -1,4 +1,13 @@
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=40E0D0&height=120&section=header"/>
+
+
 # 🗽 Landing Page - Ana Flávia Guarda 🗽
+
+<p align="left">
+  <a href="./README.en.md">
+    <img src="https://img.shields.io/badge/%F0%9F%8C%8D%20Click%20here%20to%20read%20this%20documentation%20in%20english!%20-purple?style=for-the-badge" alt="Button where change the documentation to English"/>
+  </a>
+</p>
 
 > Link da landing page: https://ana-flavia-guarda.vercel.app/
 
@@ -14,6 +23,25 @@
 - ✔️ SEO.
 
 #
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=40E0D0&height=120&section=footer"/>
+
+##
+
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=header"/>
+
+## 🛎️ Atualizações principais deste commit
+
+### `src/components:` Criado onde está os componentes que serão reutilizados em diversas partes do código.
+
+### `src/components/Buttons:` Armazena todos os botões reutilizáveis
+
+### `src/components/Buttons/ButtonDarkMode:` Botão responsável por cuidar do dark mode do site ( modo claro / escuro ).
+
+### `src/hooks:` Armazenaremos aqui os nossos hooks personalizados com as partes lógicas da aplicação. 
+
+### `src/hooks/components/Buttons/useButtonDarkMode/index.ts:` Parte lógica do nosso botão de dark mode!
+
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 
 ## 🖥 Tecnologias Utilizadas
 <div align='center'>
@@ -85,7 +113,7 @@
 
 ##
 
-## 🎉 É isso! Essa é a nossa Landing Page desenvolvida para a empresa Rumo radares, caso tenha ficado com alguma dúvida ou deseje complementar algo diretamente comigo você pode estar entrando em contato através do meu LinkedIn:
+## 🎉 É isso! Essa é a nossa Landing Page desenvolvida para a Ana Flávia Guarda, caso tenha ficado com alguma dúvida ou deseje complementar algo diretamente comigo você pode estar entrando em contato através do meu LinkedIn:
 > Link do meu LinkedIn: <a href="https://www.linkedin.com/in/guilherme-francisco-pereira-4a3867283" target="_blank">https://www.linkedin.com/in/guilherme-francisco-pereira-4a3867283</a>
 
 ### 🚀 Obrigado pela atenção e espero que tenha gostado do que tenha visto aqui, que tal agora dar uma olhada nos meus outros repositórios? 👋🏻

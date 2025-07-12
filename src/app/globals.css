@@ -1,13 +1,15 @@
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --background-reverse: #000000;
+  --text-color: #000000;
+  --text-color-reverse: #ffffff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.DarkTheme {
+  --background: #000000;
+  --background-reverse: #ffffff;
+  --text-color: #ffffff;
+  --text-color-reverse: #000000;
 }
 
 * {
@@ -17,7 +19,7 @@
 }
 
 body {
-  color: var(--foreground);
+  color: var(--text-color);
   background: var(--background);
   height: 100vh;
   width: 100vw;
