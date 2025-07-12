@@ -31,9 +31,9 @@
 
 ## 🛎️ Atualizações principais deste commit
 
-### `src/components/AboutWhoAmI:` Este é o primeiro componente da sessão de "Sobre" onde apresentamos quem é a Ana Flávia Guarda.
+### `react-icons:` Instalado a lib react-icons para utilizarmos os ícones!
 
-### `src/hooks/useAboutWhoAmI:` Hook que controla texto "Infinito" que fica passando logo no topo, escrito "Ana Guarda".
+### `src/components/WhyTakeClassWithMe:` Componente onde mostra ao usuário os benefícios que a metodologia usada pela Ana é realmente útil, trazendo consigo dados real e com link para visualização completa.
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 
@@ -59,12 +59,15 @@
 
 - `./src/app:` Este projeto é em Next então temos o núcleo da landing page estando totalmente aqui na página app, onde o arquivo page.tsx é o que é renderizado junto dos componentes que é invocado nele.
 
+- `./src/assets:` Onde está todas as fotos e arquivos estáticos que vão ser usadas no projeto.
+
 - `./src/components:` Onde está os componentes que serão reutilizados em diversas partes do código. Neste projeto temos os components:
     - AboutWhoAmI: Este é o primeiro componente da sessão de "Sobre" onde apresentamos quem é a Ana Flávia Guarda.
     - Buttons: Responsável pelos botões do site.
     - Header: Cabeçalho que se encontra no canto superior da landing page
     - MainSection: Onde temos o primeiro componente da tela
         - TypingWords: Criado somente para utilizar o 'use client' em uma parte menor do código, componente para a troca de palavras abaixo do subtitulo
+    - WhyTakeClassWithMe: Componente onde mostra ao usuário os benefícios que a metodologia usada pela Ana é realmente útil, trazendo consigo dados real e com link para visualização completa.
 
 - `./src/hooks:` Está nossos hooks personalizados com as partes lógicas de todos os nossos componentes:
     - useAboutWhoAmI: Hook que controla texto "Infinito" que fica passando logo no topo, escrito "Ana Guarda".

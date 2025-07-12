@@ -4,17 +4,17 @@
 @import url('https://fonts.cdnfonts.com/css/tt-hoves-pro-trial');
 
 :root {
-  --background: #ffffff;
+  --background: #dddddd;
   --background-reverse: #000000;
   --text-color: #000000;
-  --text-color-reverse: #ffffff;
+  --text-color-reverse: #dddddd;
   --purple-primary: #76094d;
 }
 
 .DarkTheme {
   --background: #000000;
-  --background-reverse: #ffffff;
-  --text-color: #ffffff;
+  --background-reverse: #dddddd;
+  --text-color: #dddddd;
   --text-color-reverse: #000000;
   --purple-primary: #b90674;
 }
