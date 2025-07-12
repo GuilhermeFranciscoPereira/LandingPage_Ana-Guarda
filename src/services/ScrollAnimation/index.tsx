@@ -7,8 +7,9 @@ export default function ScrollAnimation(): null {
         AOS.init({
             once: false,
             mirror: true,
-            offset: 100,
-            easing: "ease-in-out"
+            offset: 10,
+            duration: 1000,
+            easing: "ease-out"
         });
 
         return () => {

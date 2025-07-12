@@ -30,9 +30,7 @@
 
 ## 🛎️ Key updates in this commit
 
-### `react-icons:` Installed the react-icons lib to use the icons!
-
-### `src/components/WhyTakeClassWithMe:` Component that shows the user the benefits of the methodology used by Ana, providing real data and a link for full visualization.
+### `src/components/RealClassVideo:` RealClassVideo: Added a session to show a bit of a real recorded class. Using YouTube and the URL comes through .env
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 
@@ -64,7 +62,8 @@
     - AboutWhoAmI: This is the first component of the "About" section, where we introduce who Ana Flávia Guarda is.
     - Buttons: Responsible for the website's buttons. - Header: Header located at the top of the landing page
     - MainSection: Where we have the first component on the screen
-    - TypingWords: Created solely to utilize the 'use client' in a smaller part of the code, this component is for changing words below the subtitle.
+        - TypingWords: Created solely to utilize the 'use client' in a smaller part of the code, this component is for changing words below the subtitle.
+    - RealClassVideo: Added a session to show a bit of a real recorded class. Using YouTube and the URL comes through .env
     - WhyTakeClassWithMe: Component that shows the user the benefits of the methodology used by Ana, providing real data and a link for full visualization.
 
 - `./src/hooks:` Contains our custom hooks with the logical parts of all our components:

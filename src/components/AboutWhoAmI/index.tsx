@@ -31,11 +31,11 @@ export default function AboutWhoAmI(): React.ReactElement {
                         <div className={styles.textAbout}>
                             <h2>Quem é <span>Ana Flávia Guarda?</span></h2>
                             <h3>
-                                <div data-aos="fade-left" data-aos-duration="1000">
+                                <div data-aos="fade-left">
                                     Eu sou Ana Flávia Guarda, tenho 20 anos e já visitei os Estados Unidos duas vezes, onde vivi experiências reais de imersão no idioma. Apaixonada por ensinar, vivo o inglês na prática e trago para cada aula situações cotidianas que estimulam você a falar com naturalidade e confiança.
                                 </div>
                                 <br />
-                                <div data-aos="fade-right" data-aos-duration="1000">
+                                <div data-aos="fade-right">
                                     Com paciência e dedicação, meu método valoriza a conversação acima da gramática engessada. Crio um ambiente acolhedor, onde cada erro se torna oportunidade de crescimento e cada palavra pronunciada é um passo rumo à verdadeira fluência. Aqui, você aprende a se comunicar de corpo e alma.
                                 </div>
                             </h3>

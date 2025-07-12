@@ -31,9 +31,7 @@
 
 ## 🛎️ Atualizações principais deste commit
 
-### `react-icons:` Instalado a lib react-icons para utilizarmos os ícones!
-
-### `src/components/WhyTakeClassWithMe:` Componente onde mostra ao usuário os benefícios que a metodologia usada pela Ana é realmente útil, trazendo consigo dados real e com link para visualização completa.
+### `src/components/RealClassVideo:` Adicionado a sessão para mostrar um pouco de uma aula real gravada. Utilizando o youtube e a URL vem através do .env
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 
@@ -67,6 +65,7 @@
     - Header: Cabeçalho que se encontra no canto superior da landing page
     - MainSection: Onde temos o primeiro componente da tela
         - TypingWords: Criado somente para utilizar o 'use client' em uma parte menor do código, componente para a troca de palavras abaixo do subtitulo
+    - RealClassVideo: Adicionado a sessão para mostrar um pouco de uma aula real gravada. Utilizando o youtube e a URL vem através do .env
     - WhyTakeClassWithMe: Componente onde mostra ao usuário os benefícios que a metodologia usada pela Ana é realmente útil, trazendo consigo dados real e com link para visualização completa.
 
 - `./src/hooks:` Está nossos hooks personalizados com as partes lógicas de todos os nossos componentes:

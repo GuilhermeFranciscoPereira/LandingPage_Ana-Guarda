@@ -5,9 +5,9 @@ import styles from '@/components/WhyTakeClassWithMe/WhyTakeClassWithMe.module.cs
 export default function WhyTakeClassWithMe(): React.ReactElement {
     return (
         <section className={styles.WhyTakeClassWithMe} id="beneficios">
-            <div className={styles.containerWhyTakeClassWithMe} data-aos="fade-up" data-aos-duration="1000" >
+            <div className={styles.containerWhyTakeClassWithMe} data-aos="fade-up" >
                 <div className={styles.headlineWhyTakeClassWithMe}>
-                    <div className={styles.textHeadlineWhyTakeClassWithMe} data-aos="fade-up" data-aos-duration="1000">
+                    <div className={styles.textHeadlineWhyTakeClassWithMe} data-aos="fade-up">
                         <h2><span>Por que</span> ter aula comigo?</h2>
                         <p>
                             Aqui, você encontra um método focado na conversação, num ambiente descontraído e totalmente adaptado ao seu ritmo.
@@ -16,7 +16,7 @@ export default function WhyTakeClassWithMe(): React.ReactElement {
                     </div>
                 </div>
                 <div className={styles.contentBenefits}>
-                    <div className={styles.boxBenefits} data-aos="fade-up" data-aos-duration="1000">
+                    <div className={styles.boxBenefits} data-aos="fade-right">
                         <FaComments className={styles.icon} />
                         <h3>Conversação: o melhor método</h3>
                         <p>
@@ -31,7 +31,7 @@ export default function WhyTakeClassWithMe(): React.ReactElement {
                         </p>
                     </div>
 
-                    <div className={styles.boxBenefits} data-aos="fade-up" data-aos-duration="1000">
+                    <div className={styles.boxBenefits} data-aos="fade-up">
                         <FaChalkboardTeacher className={styles.icon} />
                         <h3>Aulas particulares personalizadas</h3>
                         <p>
@@ -46,7 +46,7 @@ export default function WhyTakeClassWithMe(): React.ReactElement {
                         </p>
                     </div>
 
-                    <div className={styles.boxBenefits} data-aos="fade-up" data-aos-duration="1000">
+                    <div className={styles.boxBenefits} data-aos="fade-up">
                         <FaHandshake className={styles.icon} />
                         <h3>Inglês para trabalho e amizades</h3>
                         <p>
@@ -61,7 +61,7 @@ export default function WhyTakeClassWithMe(): React.ReactElement {
                         </p>
                     </div>
 
-                    <div className={styles.boxBenefits} data-aos="fade-up" data-aos-duration="1000">
+                    <div className={styles.boxBenefits} data-aos="fade-left">
                         <MdChatBubble className={styles.icon} />
                         <h3>Você no comando</h3>
                         <p>

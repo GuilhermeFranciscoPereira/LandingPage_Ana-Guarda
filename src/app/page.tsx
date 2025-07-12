@@ -1,7 +1,8 @@
 import Header from "@/components/Header";
+import AboutWhoAmI from "@/components/AboutWhoAmI";
 import MainSection from "@/components/MainSection";
 import ScrollAnimation from "@/services/ScrollAnimation";
-import AboutWhoAmI from "@/components/AboutWhoAmI";
+import RealClassVideo from "@/components/RealClassVideo";
 import WhyTakeClassWithMe from "@/components/WhyTakeClassWithMe";
 
 export default function Home(): React.ReactElement {
@@ -12,6 +13,7 @@ export default function Home(): React.ReactElement {
       <MainSection />
       <AboutWhoAmI />
       <WhyTakeClassWithMe />
+      <RealClassVideo />
     </>
   );
 }
