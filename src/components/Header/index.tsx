@@ -3,7 +3,7 @@ import useHeader from '@/hooks/Header';
 import styles from '@/components/Header/Header.module.css';
 import ButtonDarkMode from '@/components/Buttons/ButtonDarkMode/index';
 
-export default function Header(): React.ReactNode {
+export default function Header(): React.ReactElement {
     const { modalIsOpen, doAnimation, fadeOut, toSetModalIsOpen } = useHeader();
 
     return (

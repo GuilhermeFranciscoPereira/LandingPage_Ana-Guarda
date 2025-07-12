@@ -31,15 +31,9 @@
 
 ## 🛎️ Atualizações principais deste commit
 
-### `AOS:` Instalamos a biblioteca AOS para realizar as animações com o scroll
+### `src/components/AboutWhoAmI:` Este é o primeiro componente da sessão de "Sobre" onde apresentamos quem é a Ana Flávia Guarda.
 
-### `src/components/MainSection:` Nosso componente MainSection representa a seção principal da landing page, ocupando 100% da largura disponível e centralizando o conteúdo verticalmente na viewport. Dentro dele, temos o título, subtítulo e o componente TypingWords (que faz a troca dinâmica de termos logo abaixo do subtítulo).
-
-### `src/components/TypingWords:` Componente de apresentação encarregado de animar a digitação e remoção de palavras. Este arquivo está isolado com use client para otimizar o carregamento, mantendo o resto do MainSection em server-side.
-
-### `src/hooks/useMainSection:` Hook que controla o fluxo de palavras exibidas em TypingWords, gerenciando índices, tempos de digitação/apagamento e pausa entre as transições de termos.
-
-### `src/services/ScrollAnimation:` Arquivo de serviço que inicializa e configura o AOS (Animate On Scroll) para toda a landing page. Aqui exportamos a instância pronta para uso em page.tsx, garantindo que apenas este arquivo contenha a diretiva use client e mantendo o restante do app em server-side.
+### `src/hooks/useAboutWhoAmI:` Hook que controla texto "Infinito" que fica passando logo no topo, escrito "Ana Guarda".
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 
@@ -66,12 +60,14 @@
 - `./src/app:` Este projeto é em Next então temos o núcleo da landing page estando totalmente aqui na página app, onde o arquivo page.tsx é o que é renderizado junto dos componentes que é invocado nele.
 
 - `./src/components:` Onde está os componentes que serão reutilizados em diversas partes do código. Neste projeto temos os components:
+    - AboutWhoAmI: Este é o primeiro componente da sessão de "Sobre" onde apresentamos quem é a Ana Flávia Guarda.
     - Buttons: Responsável pelos botões do site.
     - Header: Cabeçalho que se encontra no canto superior da landing page
     - MainSection: Onde temos o primeiro componente da tela
         - TypingWords: Criado somente para utilizar o 'use client' em uma parte menor do código, componente para a troca de palavras abaixo do subtitulo
 
 - `./src/hooks:` Está nossos hooks personalizados com as partes lógicas de todos os nossos componentes:
+    - useAboutWhoAmI: Hook que controla texto "Infinito" que fica passando logo no topo, escrito "Ana Guarda".
     - useButtonDarkMode: Gerencia se o usuário escolheu o tema escuro ou claro da landing page
     - useHeader: Destinado ao header, contendo a lógica para mostrar / esconder as opções de roteamento pela página
     - useMainSection: Para a troca de palavras abaixo do subtitulo, fazendo a animação de "criar" / "apagar" as palavras letra por letra

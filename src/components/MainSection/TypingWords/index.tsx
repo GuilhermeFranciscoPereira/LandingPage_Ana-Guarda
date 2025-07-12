@@ -2,7 +2,7 @@
 import useMainSection from '@/hooks/useMainSection';
 import styles from '@/components/MainSection/MainSection.module.css';
 
-export default function TypingWords(): React.ReactNode {
+export default function TypingWords(): React.ReactElement {
   const { currentWord } = useMainSection();
 
   return (

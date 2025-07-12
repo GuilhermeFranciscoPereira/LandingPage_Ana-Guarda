@@ -1,7 +1,7 @@
 import TypingWords from './TypingWords';
 import styles from '@/components/MainSection/MainSection.module.css';
 
-export default function MainSection(): React.ReactNode {
+export default function MainSection(): React.ReactElement {
     return (
         <main className={styles.main} data-aos="fade-up" data-aos-duration="3000">
             <div className={styles.firstViewMainDiv}>

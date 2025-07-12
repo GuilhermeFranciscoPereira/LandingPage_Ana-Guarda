@@ -30,15 +30,9 @@
 
 ## 🛎️ Key updates in this commit
 
-### `AOS`: We installed the AOS library to enable scroll-triggered animations.
+### `src/components/AboutWhoAmI:` This is the first component of the "About" section where we introduce who Ana Flávia Guarda is.
 
-### `src/components/MainSection:` Our MainSection component represents the primary section of the landing page, occupying 100% of the available width and vertically centering its content within the viewport. Inside it, we have the title, subtitle, and the TypingWords component (which dynamically cycles through terms just below the subtitle).
-
-### `src/components/TypingWords:` A presentational component responsible for animating the typing and deletion of words. This file is isolated with use client to optimize loading, while keeping the rest of MainSection rendered server-side.
-
-### `src/hooks/useMainSection:` A hook that controls the flow of words displayed in TypingWords, managing the indices, typing/deletion timings, and pause intervals between term transitions.
-
-### `src/services/ScrollAnimation:` A service file that initializes and configures AOS (Animate On Scroll) for the entire landing page. Here we export the ready-to-use instance to page.tsx, ensuring that only this file contains the use client directive and keeping the rest of the app server-side.
+### `src/hooks/useAboutWhoAmI:` Hook that controls the "Infinite" text that scrolls right at the top, written "Ana Guarda".
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 
@@ -62,7 +56,21 @@
 
 ## 🛈 How the project is structured
 
-- `./src/app:` This is a Next.js project, so the core of the landing page lives entirely in the `app` directory, where the `page.tsx` file is rendered along with the components it invokes.
+- `./src/app:` This project is in Next, so we have the core of the landing page located entirely here on the app page, where the page.tsx file is what is rendered along with the components that are invoked in it.
+
+- `./src/components:` This is where the components that will be reused in various parts of the code are located. In this project, we have the following components:
+- AboutWhoAmI: This is the first component of the "About" section, where we introduce who Ana Flávia Guarda is.
+- Buttons: Responsible for the website's buttons. - Header: Header located at the top of the landing page
+- MainSection: Where we have the first component on the screen
+- TypingWords: Created solely to utilize the 'use client' in a smaller part of the code, this component is for changing words below the subtitle.
+
+- `./src/hooks:` Contains our custom hooks with the logical parts of all our components:
+- useAboutWhoAmI: Hook that controls the "Infinite" text that scrolls right at the top, written "Ana Guarda."
+- useButtonDarkMode: Manages whether the user has chosen the dark or light theme for the landing page.
+- useHeader: Intended for the header, containing the logic to show/hide the page's routing options.
+- useMainSection: For changing words below the subtitle, creating the animation to "create"/"delete" words letter by letter.
+
+- `./src/services:` Folder containing the service functionalities. We have a single file called "ScrollAnimation" that serves only to create the aos configuration (responsible for the animation when scrolling on the landing page) and export it to page.tsx, since this way we can use the 'use client' directive in the file and not in the main application.
 
 ## ❔ How to run the project on my machine?
 
