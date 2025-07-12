@@ -30,15 +30,9 @@
 
 ## 🛎️ Key updates in this commit
 
-### `src/components:` Created to hold reusable components used throughout the code.
+### `src/components/Header:` Our Header component is located at the top of the site with a width of 100vw; on the left is our hamburger menu and on the right is the dark mode toggle.
 
-### `src/components/Buttons:` Stores all reusable buttons.
-
-### `src/components/Buttons/ButtonDarkMode:` Button responsible for handling the site's dark mode (light/dark).
-
-### `src/hooks:` Here we will store our custom hooks with the application's logic.
-
-### `src/hooks/components/Buttons/useButtonDarkMode/index.ts:` Logic for our dark mode button!
+### `src/hooks/components/Header:` Logic for our hamburger menu!
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 

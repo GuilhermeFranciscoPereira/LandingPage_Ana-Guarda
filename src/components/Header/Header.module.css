@@ -1,0 +1,165 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    width: 100vw;
+    padding: 0px 10px;
+}
+
+.menuClosed {
+    z-index: 2;
+}
+
+.menuClosed > .hamburguerToToggleSection {
+    cursor: pointer;
+}
+
+.menuClosed > .hamburguerToToggleSection > input {
+    display: none;
+}
+
+.menuClosed > .hamburguerToToggleSection > svg {
+    height: 3em;
+    transition: transform .6s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 1;
+}
+
+.menuClosed > .hamburguerToToggleSection > svg > .lineTopBottom {
+    stroke-dasharray: 12 63;
+}
+
+.menuClosed > .hamburguerToToggleSection > svg > .line,
+.lineTopBottom {
+    fill: none;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: var(--purple-primary);
+    transition: stroke-dasharray 2s cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menuClosed > .hamburguerToToggleSection > input:checked+svg {
+    transform: rotate(-45deg);
+}
+
+.menuClosed > .hamburguerToToggleSection > input:checked+svg > .lineTopBottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+}
+
+.menuOpen {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 1;
+    left: 0;
+    top: 0;
+    transition: .5s ease-in-out;
+}
+
+.menuOpen > nav {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0px 0px 15px;
+    transition: .5s ease-in-out;
+}
+
+.menuOpen > nav > a {
+    opacity: 0;
+    width: fit-content;
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 3px;
+    text-decoration: none;
+    color: white;
+    transition: .5s ease-in-out;
+    transform: translateY(20px);
+    animation: fadeIn .6s forwards;
+}
+
+.menuOpen > nav > a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: var(--purple-primary);
+    transition: width .7s ease;
+}
+
+.menuOpen > nav > a:hover::after {
+    width: 100%;
+}
+
+.menuOpen > nav > a:hover {
+    margin-left: 5px;
+}
+
+/* ANIMATION TO FADE IN */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.menuOpen > nav > a:nth-child(1) {
+    animation-delay: .2s;
+}
+
+.menuOpen > nav > a:nth-child(2) {
+    animation-delay: .4s;
+}
+
+.menuOpen > nav > a:nth-child(3) {
+    animation-delay: .6s;
+}
+
+.menuOpen > nav > a:nth-child(4) {
+    animation-delay: .8s;
+}
+
+.menuOpen > nav > a:nth-child(5) {
+    animation-delay: 1s;
+}
+
+/* FADE OUT */
+.menuOpen > nav.fadeOut > a {
+    animation: fadeOut .6s forwards;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+
+.menuOpen > nav.fadeOut > a:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.menuOpen > nav.fadeOut > a:nth-child(2) {
+    animation-delay: .8s;
+}
+
+.menuOpen > nav.fadeOut > a:nth-child(3) {
+    animation-delay: .6s;
+}
+
+.menuOpen > nav.fadeOut > a:nth-child(4) {
+    animation-delay: .4s;
+}
+
+.menuOpen > nav.fadeOut > a:nth-child(5) {
+    animation-delay: .2s;
+}

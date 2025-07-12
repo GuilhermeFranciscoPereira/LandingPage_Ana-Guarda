@@ -31,15 +31,9 @@
 
 ## 🛎️ Atualizações principais deste commit
 
-### `src/components:` Criado onde está os componentes que serão reutilizados em diversas partes do código.
+### `src/components/Header:` Nosso componente Header (cabeçalho) se localiza no campo superior do site com um width ocupando 100vw, na esquerda temos o nosso hamburguer menu e na direita o botão de dark mode.
 
-### `src/components/Buttons:` Armazena todos os botões reutilizáveis
-
-### `src/components/Buttons/ButtonDarkMode:` Botão responsável por cuidar do dark mode do site ( modo claro / escuro ).
-
-### `src/hooks:` Armazenaremos aqui os nossos hooks personalizados com as partes lógicas da aplicação. 
-
-### `src/hooks/components/Buttons/useButtonDarkMode/index.ts:` Parte lógica do nosso botão de dark mode!
+### `src/hooks/components/Header:` Parte lógica do hamburguer menu!
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 
