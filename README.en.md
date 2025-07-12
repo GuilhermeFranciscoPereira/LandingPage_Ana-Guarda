@@ -30,9 +30,15 @@
 
 ## 🛎️ Key updates in this commit
 
-### `src/components/Header:` Our Header component is located at the top of the site with a width of 100vw; on the left is our hamburger menu and on the right is the dark mode toggle.
+### `AOS`: We installed the AOS library to enable scroll-triggered animations.
 
-### `src/hooks/components/Header:` Logic for our hamburger menu!
+### `src/components/MainSection:` Our MainSection component represents the primary section of the landing page, occupying 100% of the available width and vertically centering its content within the viewport. Inside it, we have the title, subtitle, and the TypingWords component (which dynamically cycles through terms just below the subtitle).
+
+### `src/components/TypingWords:` A presentational component responsible for animating the typing and deletion of words. This file is isolated with use client to optimize loading, while keeping the rest of MainSection rendered server-side.
+
+### `src/hooks/useMainSection:` A hook that controls the flow of words displayed in TypingWords, managing the indices, typing/deletion timings, and pause intervals between term transitions.
+
+### `src/services/ScrollAnimation:` A service file that initializes and configures AOS (Animate On Scroll) for the entire landing page. Here we export the ready-to-use instance to page.tsx, ensuring that only this file contains the use client directive and keeping the rest of the app server-side.
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 

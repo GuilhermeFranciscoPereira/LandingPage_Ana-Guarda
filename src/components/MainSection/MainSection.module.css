@@ -1,0 +1,106 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    gap: 16px;
+    width: 100%;
+    height: 90vh;
+    background: var(--background);
+    color: var(--text-color);
+}
+
+.main > .firstViewMainDiv {
+    font-size: clamp(1rem, 2vw + .8rem, 3rem);
+}
+
+.main > .firstViewMainDiv > h2 {
+    font-weight: lighter;
+}
+
+.main > .additionalText > p {
+    font-size: clamp(1.2rem, 1.5vw + 1rem, 2rem);
+    max-width: 1200px;
+    color: var(--text-color);
+}
+
+.main > .additionalText > p > .typingEffect {
+    border-right: 2px solid var(--purple-primary);
+    padding-right: 3px;
+    color: var(--purple-primary);
+    animation: typingAnimation .8s infinite;
+}
+
+@keyframes typingAnimation {
+    50% {
+        border: none;
+    }
+}
+
+.main > a {
+    text-decoration: none;
+}
+
+.main > a > .buttonAbout {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 12px 18px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.main > a > .buttonAbout::before {
+    content: "";
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    transition: all .6s ease;
+    background: var(--purple-primary);
+}
+
+.main > a > .buttonAbout > span {
+    position: relative;
+    font-size: clamp(1.2rem, 1.5vw + 1rem, 2rem);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.main > a > .buttonAbout > svg {
+    position: relative;
+    margin-left: 10px;
+    top: 0;
+    stroke-width: 2;
+    transform: translateX(0px);
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: all 0.3s ease;
+    stroke: var(--purple-primary);
+}
+
+.main > a > .buttonAbout:hover::before {
+    width: 100%;
+    background: var(--purple-primary);
+}
+
+.main > a > .buttonAbout:hover > span,
+.main > a > .buttonAbout:hover > svg {
+    color: white;
+    stroke: var(--text-color-reverse);
+}
+
+.main > a > .buttonAbout:hover > svg {
+    transform: translateX(10px);
+}
+
+.main > a > .buttonAbout:active {
+    transform: scale(0.95);
+}

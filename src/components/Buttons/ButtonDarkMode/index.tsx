@@ -1,5 +1,5 @@
 'use client';
-import useButtonDarkMode from '@/hooks/components/Buttons/useButtonDarkMode';
+import useButtonDarkMode from '@/hooks/Buttons/useButtonDarkMode';
 import styles from '@/components/Buttons/ButtonDarkMode/ButtonDarkMode.module.css';
 
 export default function ButtonDarkMode(): React.ReactElement {

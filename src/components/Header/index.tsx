@@ -1,5 +1,5 @@
 'use client';
-import useHeader from '@/hooks/components/Header';
+import useHeader from '@/hooks/Header';
 import styles from '@/components/Header/Header.module.css';
 import ButtonDarkMode from '@/components/Buttons/ButtonDarkMode/index';
 
@@ -22,7 +22,7 @@ export default function Header(): React.ReactNode {
             {modalIsOpen && <section className={styles.menuOpen}>
                 <nav className={fadeOut ? styles.fadeOut : ''}>
                     <a href="#inicio" onClick={() => { toSetModalIsOpen() }}>INÍCIO</a>
-                    <a href="#SESSÃO" onClick={() => { toSetModalIsOpen() }}>SESSÃO</a>
+                    <a href="#sobre" onClick={() => { toSetModalIsOpen() }}>SOBRE</a>
                     <a href="#SESSÃO" onClick={() => { toSetModalIsOpen() }}>SESSÃO</a>
                     <a href="#SESSÃO" onClick={() => { toSetModalIsOpen() }}>SESSÃO</a>
                     <a href="#SESSÃO" onClick={() => { toSetModalIsOpen() }}>SESSÃO</a>

@@ -31,9 +31,15 @@
 
 ## 🛎️ Atualizações principais deste commit
 
-### `src/components/Header:` Nosso componente Header (cabeçalho) se localiza no campo superior do site com um width ocupando 100vw, na esquerda temos o nosso hamburguer menu e na direita o botão de dark mode.
+### `AOS:` Instalamos a biblioteca AOS para realizar as animações com o scroll
 
-### `src/hooks/components/Header:` Parte lógica do hamburguer menu!
+### `src/components/MainSection:` Nosso componente MainSection representa a seção principal da landing page, ocupando 100% da largura disponível e centralizando o conteúdo verticalmente na viewport. Dentro dele, temos o título, subtítulo e o componente TypingWords (que faz a troca dinâmica de termos logo abaixo do subtítulo).
+
+### `src/components/TypingWords:` Componente de apresentação encarregado de animar a digitação e remoção de palavras. Este arquivo está isolado com use client para otimizar o carregamento, mantendo o resto do MainSection em server-side.
+
+### `src/hooks/useMainSection:` Hook que controla o fluxo de palavras exibidas em TypingWords, gerenciando índices, tempos de digitação/apagamento e pausa entre as transições de termos.
+
+### `src/services/ScrollAnimation:` Arquivo de serviço que inicializa e configura o AOS (Animate On Scroll) para toda a landing page. Aqui exportamos a instância pronta para uso em page.tsx, garantindo que apenas este arquivo contenha a diretiva use client e mantendo o restante do app em server-side.
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 
@@ -58,6 +64,19 @@
 ## 🛈 Como o projeto está estruturado
 
 - `./src/app:` Este projeto é em Next então temos o núcleo da landing page estando totalmente aqui na página app, onde o arquivo page.tsx é o que é renderizado junto dos componentes que é invocado nele.
+
+- `./src/components:` Onde está os componentes que serão reutilizados em diversas partes do código. Neste projeto temos os components:
+    - Buttons: Responsável pelos botões do site.
+    - Header: Cabeçalho que se encontra no canto superior da landing page
+    - MainSection: Onde temos o primeiro componente da tela
+        - TypingWords: Criado somente para utilizar o 'use client' em uma parte menor do código, componente para a troca de palavras abaixo do subtitulo
+
+- `./src/hooks:` Está nossos hooks personalizados com as partes lógicas de todos os nossos componentes:
+    - useButtonDarkMode: Gerencia se o usuário escolheu o tema escuro ou claro da landing page
+    - useHeader: Destinado ao header, contendo a lógica para mostrar / esconder as opções de roteamento pela página
+    - useMainSection: Para a troca de palavras abaixo do subtitulo, fazendo a animação de "criar" / "apagar" as palavras letra por letra
+
+- `./src/services:` Pasta que contém as funcionalidades de serviço. Temos um único arquivo chamado "ScrollAnimation" que serve somente para criarmos a configuração do aos ( Responsável pela animação ao rolar o scroll na landing page ) e exportar para o page.tsx, uma vez que assim podemos usar a diretiva 'use client' no arquivo e não no app principal da aplicação.
 
 ## ❔ Como rodar o projeto na minha máquina?
 
