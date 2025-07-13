@@ -4,6 +4,7 @@ import MainSection from "@/Sections/MainSection";
 import ScrollAnimation from "@/services/ScrollAnimation";
 import RealClassVideo from "@/Sections/RealClassVideo";
 import WhyTakeClassWithMe from "@/Sections/WhyTakeClassWithMe";
+import TargetAudience from "@/Sections/TargetAudience";
 
 export default function Home(): React.ReactElement {
   return (
@@ -14,6 +15,7 @@ export default function Home(): React.ReactElement {
       <AboutWhoAmI />
       <WhyTakeClassWithMe />
       <RealClassVideo />
+      <TargetAudience/>
     </>
   );
 }

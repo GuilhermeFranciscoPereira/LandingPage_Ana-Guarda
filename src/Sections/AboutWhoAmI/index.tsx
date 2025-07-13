@@ -10,7 +10,7 @@ export default function AboutWhoAmI(): React.ReactElement {
     return (
         <section id="sobre" className={styles.aboutSection}>
             <div className={styles.containerAbout}>
-                <div className={styles.headlineAbout} data-aos="fade-up" data-aos-duration="1500">
+                <div className={styles.headlineAbout} data-aos="fade-up">
                     <div className={styles.headlineScroll} id="headline-scroll">
                         <span className={styles.bold}>ANA</span>
                         <span className={styles.divisor}></span>
@@ -27,7 +27,7 @@ export default function AboutWhoAmI(): React.ReactElement {
                     </div>
                 </div>
                 <div className={styles.contentAbout}>
-                    <div className={styles.leftAbout} data-aos="fade-right" data-aos-duration="1500">
+                    <div className={styles.leftAbout} data-aos="fade-right">
                         <div className={styles.textAbout}>
                             <h2>Quem é <span>Ana Flávia Guarda?</span></h2>
                             <h3>
@@ -41,7 +41,7 @@ export default function AboutWhoAmI(): React.ReactElement {
                             </h3>
                         </div>
                     </div>
-                    <div className={styles.rightAbout} data-aos="fade-left" data-aos-duration="1500">
+                    <div className={styles.rightAbout} data-aos="fade-left">
                         <div className={`${styles.container} ${styles.noselect}`}>
                             <div className={styles.canvas}>
                                 {Array.from({ length: 25 }, (_, i) => (

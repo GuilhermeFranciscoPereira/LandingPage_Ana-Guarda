@@ -40,7 +40,7 @@
     border: none;
     height: 100%;
     width: 100%;
-    box-shadow: 2px 2px 10px black;
+    box-shadow: var(--box-shadow-default);
 }
 
 @media screen and (max-width: 1024px) {

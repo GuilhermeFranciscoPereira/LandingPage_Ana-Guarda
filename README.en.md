@@ -30,9 +30,9 @@
 
 ## 🛎️ Key updates in this commit
 
-### `src/Sections:` Created the folder responsible for grouping all our sections
+### `src/Sections/TargetAudience:` This section presents the main pain points and motivations of students, clearly defining who the classes are for. It helps the visitor identify themselves and understand if the class meets their needs.
 
-### `src/Sections:` Also created the sections folder to store our section hooks
+### `src/app/globals.css:` Added an additional item to the root layout: ( --box-shadow-default ) and added it where box-shadow was previously used. Files: RealClassVideo; WhyTakeClassWithMe; AboutWhoAmI
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 
@@ -69,6 +69,7 @@
     - MainSection: This is where we have the first section of the screen.
         - TypingWords: Created solely to use the 'use client' in a smaller part of the code, a component for changing words below the subtitle.
     - RealClassVideo: Added a section to show a glimpse of a real recorded class. Using YouTube and the URL comes through .env.
+    - TargetAudience: This section presents the main pain points and motivations of students, clearly defining who the classes are for. It helps the visitor identify themselves and understand if the class meets their needs.
     - WhyTakeClassWithMe: A section that shows the user the benefits of Ana's methodology, providing real data and a link for full viewing.
 
 - `./src/hooks:` This is our custom hooks with the logical parts:

@@ -31,9 +31,9 @@
 
 ## 🛎️ Atualizações principais deste commit
 
-### `src/Sections:` Criado a pasta responsável por agrupar todas as nossas seções
+### `src/Sections/TargetAudience:` Seção que apresenta as principais dores e motivações dos alunos, definindo claramente para quem as aulas são destinadas. Ajuda o visitante a se identificar e entender se a aula atende às suas necessidades.
 
-### `src/Sections:` Também criado a pasta sections para guardar os nossos hooks das seções
+### `src/app/globals.css:` Criado mais um item ao root layout: ( --box-shadow-default ) e adicionado ele onde era utilizado box-shadow, arquivos: RealClassVideo; WhyTakeClassWithMe; AboutWhoAmI
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 
@@ -70,6 +70,7 @@
     - MainSection: Onde temos a primeira seção da tela
         - TypingWords: Criado somente para utilizar o 'use client' em uma parte menor do código, componente para a troca de palavras abaixo do subtitulo
     - RealClassVideo: Adicionado a sessão para mostrar um pouco de uma aula real gravada. Utilizando o youtube e a URL vem através do .env
+    - TargetAudience: Seção que apresenta as principais dores e motivações dos alunos, definindo claramente para quem as aulas são destinadas. Ajuda o visitante a se identificar e entender se a aula atende às suas necessidades.
     - WhyTakeClassWithMe: Seção onde mostra ao usuário os benefícios que a metodologia usada pela Ana é realmente útil, trazendo consigo dados real e com link para visualização completa.
 
 - `./src/hooks:` Está nossos hooks personalizados com as partes lógicas:

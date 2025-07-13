@@ -1,0 +1,79 @@
+.courseContainer {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
+    overflow-x: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--text-color);
+}
+
+.courseContainer>.courseTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+    letter-spacing: 1px;
+    color: var(--text-color);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.courseContainer>.courseTitle>span {
+    color: var(--purple-primary);
+}
+
+.courseContainer>.gridContainer {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    align-content: center;
+}
+
+.courseContainer>.gridContainer>.gridItem {
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    box-shadow: var(--box-shadow-default);
+    transition: transform .3s ease;
+}
+
+.courseContainer>.gridContainer>.gridItem:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.courseContainer>.gridContainer>.gridItem>.icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    transition: transform .6s ease, color 0s;
+}
+
+.courseContainer>.gridContainer>.gridItem:hover>.icon {
+    color: var(--purple-primary);
+    transform: rotate(360deg) scale(1.2);
+}
+
+.courseContainer>.gridContainer>.gridItem>p {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.4;
+    transition: color 0.3s ease;
+}
+
+.courseContainer>.gridContainer>.gridItem:hover>p {
+    color: var(--purple-primary);
+}
+
+@media screen and (max-width: 480px) {
+    .courseContainer {
+        margin-top: 10vh;
+    }
+}

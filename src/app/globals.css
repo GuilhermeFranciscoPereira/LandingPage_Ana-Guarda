@@ -9,6 +9,7 @@
   --text-color: #000000;
   --text-color-reverse: #dddddd;
   --purple-primary: #76094d;
+  --box-shadow-default: 0 4px 8px rgba(0, 0, 0, 0.7);
 }
 
 .DarkTheme {
@@ -17,6 +18,7 @@
   --text-color: #dddddd;
   --text-color-reverse: #000000;
   --purple-primary: #b90674;
+  --box-shadow-default: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
 
 * {
