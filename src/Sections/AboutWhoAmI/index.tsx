@@ -1,7 +1,6 @@
 'use client';
 import Image from 'next/image';
 import useAboutWhoAmI from '@/hooks/Sections/useAboutWhoAmI';
-import photo_anaFlaviaGuarda from '@/assets/photo_anaFlaviaGuarda.jpg';
 import styles from '@/Sections/AboutWhoAmI/AboutWhoAmI.module.css';
 
 export default function AboutWhoAmI(): React.ReactElement {
@@ -52,7 +51,9 @@ export default function AboutWhoAmI(): React.ReactElement {
                                 ))}
                                 <div className={styles.card}>
                                     <Image
-                                        src={photo_anaFlaviaGuarda}
+                                        src={'/assets/images/AboutWhoAmISection/photo_anaFlaviaGuarda.jpg'}
+                                        width={300}
+                                        height={300}
                                         alt="Foto do rosto da Ana Flávia Guarda"
                                         quality={100}
                                         className={styles.image}

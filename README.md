@@ -31,9 +31,7 @@
 
 ## 🛎️ Atualizações principais deste commit
 
-### `src/Sections/TargetAudience:` Seção que apresenta as principais dores e motivações dos alunos, definindo claramente para quem as aulas são destinadas. Ajuda o visitante a se identificar e entender se a aula atende às suas necessidades.
-
-### `src/app/globals.css:` Criado mais um item ao root layout: ( --box-shadow-default ) e adicionado ele onde era utilizado box-shadow, arquivos: RealClassVideo; WhyTakeClassWithMe; AboutWhoAmI
+### `src/Sections/Methodology:` Esta seção apresenta a metodologia utilizada, destacando as etapas práticas e personalizadas usadas para garantir o aprendizado eficaz de conversação em inglês. O objetivo é mostrar de forma clara e visual como o aluno será conduzido ao progresso real.
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 
@@ -69,6 +67,7 @@
     - AboutWhoAmI: Esta é a seção de "Sobre" onde apresentamos quem é a Ana Flávia Guarda.
     - MainSection: Onde temos a primeira seção da tela
         - TypingWords: Criado somente para utilizar o 'use client' em uma parte menor do código, componente para a troca de palavras abaixo do subtitulo
+    - Methodology: Esta seção apresenta a metodologia utilizada, destacando as etapas práticas e personalizadas usadas para garantir o aprendizado eficaz de conversação em inglês. O objetivo é mostrar de forma clara e visual como o aluno será conduzido ao progresso real.
     - RealClassVideo: Adicionado a sessão para mostrar um pouco de uma aula real gravada. Utilizando o youtube e a URL vem através do .env
     - TargetAudience: Seção que apresenta as principais dores e motivações dos alunos, definindo claramente para quem as aulas são destinadas. Ajuda o visitante a se identificar e entender se a aula atende às suas necessidades.
     - WhyTakeClassWithMe: Seção onde mostra ao usuário os benefícios que a metodologia usada pela Ana é realmente útil, trazendo consigo dados real e com link para visualização completa.

@@ -30,9 +30,7 @@
 
 ## 🛎️ Key updates in this commit
 
-### `src/Sections/TargetAudience:` This section presents the main pain points and motivations of students, clearly defining who the classes are for. It helps the visitor identify themselves and understand if the class meets their needs.
-
-### `src/app/globals.css:` Added an additional item to the root layout: ( --box-shadow-default ) and added it where box-shadow was previously used. Files: RealClassVideo; WhyTakeClassWithMe; AboutWhoAmI
+### `src/Sections/Methodology:` This section presents the methodology used, highlighting the practical and personalized steps used to ensure effective English conversation learning. The goal is to clearly and visually demonstrate how the student will be guided to real progress.
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 
@@ -68,6 +66,7 @@
     - AboutWhoAmI: This is the "About" section where we introduce who Ana Flávia Guarda is.
     - MainSection: This is where we have the first section of the screen.
         - TypingWords: Created solely to use the 'use client' in a smaller part of the code, a component for changing words below the subtitle.
+    - Methodology: This section presents the methodology used, highlighting the practical and personalized steps used to ensure effective English conversation learning. The goal is to clearly and visually demonstrate how the student will be guided to real progress.
     - RealClassVideo: Added a section to show a glimpse of a real recorded class. Using YouTube and the URL comes through .env.
     - TargetAudience: This section presents the main pain points and motivations of students, clearly defining who the classes are for. It helps the visitor identify themselves and understand if the class meets their needs.
     - WhyTakeClassWithMe: A section that shows the user the benefits of Ana's methodology, providing real data and a link for full viewing.

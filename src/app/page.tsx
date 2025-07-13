@@ -1,10 +1,11 @@
 import Header from "@/components/Header";
-import AboutWhoAmI from "@/Sections/AboutWhoAmI";
 import MainSection from "@/Sections/MainSection";
-import ScrollAnimation from "@/services/ScrollAnimation";
+import AboutWhoAmI from "@/Sections/AboutWhoAmI";
+import Methodology from "@/Sections/Methodology";
 import RealClassVideo from "@/Sections/RealClassVideo";
-import WhyTakeClassWithMe from "@/Sections/WhyTakeClassWithMe";
 import TargetAudience from "@/Sections/TargetAudience";
+import ScrollAnimation from "@/services/ScrollAnimation";
+import WhyTakeClassWithMe from "@/Sections/WhyTakeClassWithMe";
 
 export default function Home(): React.ReactElement {
   return (
@@ -16,6 +17,7 @@ export default function Home(): React.ReactElement {
       <WhyTakeClassWithMe />
       <RealClassVideo />
       <TargetAudience/>
+      <Methodology/>
     </>
   );
 }
