@@ -10,36 +10,36 @@
     color: var(--text-color);
 }
 
-.studentsSection>.studentsContainer {
+.studentsSection > .studentsContainer {
     width: 100%;
     max-width: 1200px;
 }
 
-.studentsSection>.studentsContainer>.headlineStudents {
+.studentsSection > .studentsContainer > .headlineStudents {
     text-align: center;
     margin-bottom: 5rem;
 }
 
-.studentsSection>.studentsContainer>.headlineStudents>.titleStudents {
+.studentsSection > .studentsContainer > .headlineStudents > .titleStudents {
     font-size: 5rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
     color: var(--purple-primary);
 }
 
-.studentsSection>.studentsContainer>.headlineStudents>.descriptionHeadlineStudents {
+.studentsSection > .studentsContainer > .headlineStudents > .descriptionHeadlineStudents {
     font-size: 1.25rem;
     opacity: 0.8;
 }
 
-.studentsSection>.studentsContainer>.studentsCards {
+.studentsSection > .studentsContainer > .studentsCards {
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.studentsSection>.studentsContainer>.studentsCards>.student {
+.studentsSection > .studentsContainer > .studentsCards > .student {
     position: relative;
     flex: 1 1 300px;
     max-width: 450px;
@@ -55,12 +55,12 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.studentsSection>.studentsContainer>.studentsCards>.student:hover {
+.studentsSection > .studentsContainer > .studentsCards > .student:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-.studentsSection>.studentsContainer>.studentsCards>.student>.imageWrapper {
+.studentsSection > .studentsContainer > .studentsCards > .student > .imageWrapper {
     position: absolute;
     top: -50px;
     left: 50%;
@@ -72,38 +72,38 @@
     z-index: 1;
 }
 
-.studentsSection>.studentsContainer>.studentsCards>.student>.imageWrapper>img {
+.studentsSection > .studentsContainer > .studentsCards > .student > .imageWrapper > img {
     border-radius: 50%;
     display: block;
     border: 2px solid var(--purple-primary);
 }
 
-.studentsSection>.studentsContainer>.studentsCards>.student>.studentText {
+.studentsSection > .studentsContainer > .studentsCards > .student > .studentText {
     margin-top: 2rem;
     width: 100%;
 }
 
-.studentsSection>.studentsContainer>.studentsCards>.student>.studentText>.contentTextStudent {
+.studentsSection > .studentsContainer > .studentsCards > .student > .studentText > .contentTextStudent {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-.studentsSection>.studentsContainer>.studentsCards>.student>.studentText>.contentTextStudent>h3 {
+.studentsSection > .studentsContainer > .studentsCards > .student > .studentText > .contentTextStudent > h3 {
     margin: 0 0 1rem;
     font-size: 2.5rem;
     color: var(--text-color);
 }
 
-.studentsSection>.studentsContainer>.studentsCards>.student>.studentText>.contentTextStudent>p {
+.studentsSection > .studentsContainer > .studentsCards > .student > .studentText > .contentTextStudent > p {
     font-size: 1.2rem;
     line-height: 1.5;
     color: var(--text-color);
 }
 
 @media screen and (max-width: 767px) {
-    .studentsSection>.studentsContainer>.studentsCards>.student {
+    .studentsSection > .studentsContainer > .studentsCards > .student {
         max-width: 100%;
         margin-top: 40px;
     }

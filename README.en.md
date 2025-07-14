@@ -30,7 +30,7 @@
 
 ## 🛎️ Key updates in this commit
 
-### `src/Sections/Students:` Created the section that shows 3 of the teacher's students and briefly tells their stories
+### `src/Sections/MainSection/TypingWords:` Fixed so it doesn't "break" the layout on mobile
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 

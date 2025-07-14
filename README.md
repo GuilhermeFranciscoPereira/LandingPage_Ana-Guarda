@@ -31,7 +31,7 @@
 
 ## 🛎️ Atualizações principais deste commit
 
-### `src/Sections/Students:` Criado a seção que mostra 3 alunos da professora e conta brevemente suas histórias
+### `src/Sections/MainSection/TypingWords:` Resolvido para não ficar "quebrando" o layout no mobile
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 
