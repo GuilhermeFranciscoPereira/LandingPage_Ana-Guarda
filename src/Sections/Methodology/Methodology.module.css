@@ -20,11 +20,15 @@
 }
 
 .methodologySection > .container > .title {
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: 700;
     margin-bottom: 2rem;
     text-align: center;
     color: var(--text-color);
+}
+
+.methodologySection > .container > .title > span {
+    color: var(--purple-primary);
 }
 
 .methodologySection > .container > .cards {

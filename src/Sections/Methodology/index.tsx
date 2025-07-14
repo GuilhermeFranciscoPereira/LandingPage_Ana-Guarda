@@ -6,7 +6,7 @@ export default function Methodology(): React.ReactElement {
     return (
         <section id="metodologia" className={styles.methodologySection} data-aos="fade-up">
             <div className={styles.container}>
-                <h2 className={styles.title}>Minha Metodologia</h2>
+                <h2 className={styles.title}>Minha <span>Metodologia</span></h2>
                 <div className={styles.cards}>
                     <div className={styles.card} data-aos="fade-right">
                         <FaComments className={styles.icon} /><p>1 - Imersão na Conversação<br /><span>Simulações de situações reais para falar desde o início</span></p>

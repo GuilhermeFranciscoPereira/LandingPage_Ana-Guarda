@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Students from "@/Sections/Students";
 import MainSection from "@/Sections/MainSection";
 import AboutWhoAmI from "@/Sections/AboutWhoAmI";
 import Methodology from "@/Sections/Methodology";
@@ -18,6 +19,7 @@ export default function Home(): React.ReactElement {
       <RealClassVideo />
       <TargetAudience />
       <Methodology />
+      <Students />
     </>
   );
 }
