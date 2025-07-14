@@ -1,4 +1,3 @@
-'use client';
 import useButtonDarkMode from '@/hooks/components/useButtons/useButtonDarkMode';
 import styles from '@/components/Buttons/ButtonDarkMode/ButtonDarkMode.module.css';
 

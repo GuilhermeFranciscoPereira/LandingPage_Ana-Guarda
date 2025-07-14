@@ -16,8 +16,8 @@ export default function Home(): React.ReactElement {
       <AboutWhoAmI />
       <WhyTakeClassWithMe />
       <RealClassVideo />
-      <TargetAudience/>
-      <Methodology/>
+      <TargetAudience />
+      <Methodology />
     </>
   );
 }

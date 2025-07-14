@@ -20,7 +20,7 @@
 }
 
 .methodologySection > .container > .title {
-    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 2rem;
     text-align: center;
@@ -59,7 +59,7 @@
     flex-shrink: 0;
     font-size: 2.5rem;
     color: var(--text-color);
-    transition: transform 0.6s ease, color 0.3s ease;
+    transition: transform .6s ease, color .3s ease;
 }
 
 .methodologySection > .container > .cards > .card:hover > .icon {
@@ -72,7 +72,7 @@
     font-size: 1rem;
     color: var(--text-color);
     line-height: 1.4;
-    transition: color 0.3s ease;
+    transition: color .3s ease;
 }
 
 .methodologySection > .container > .cards > .card:hover > p {
@@ -104,7 +104,7 @@
         flex-direction: column;
         text-align: center;
         align-items: center;
-        gap: 0.5rem;
+        gap: .5rem;
         padding: 1rem;
     }
 
@@ -113,7 +113,7 @@
     }
 
     .methodologySection > .container > .cards > .card > p {
-        font-size: 0.95rem;
+        font-size: .95rem;
     }
 }
 

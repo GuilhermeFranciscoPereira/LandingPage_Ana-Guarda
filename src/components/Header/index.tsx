@@ -19,16 +19,18 @@ export default function Header(): React.ReactElement {
                     </svg>
                 </label>
             </section>
-            {modalIsOpen && <section className={styles.menuOpen}>
-                <nav className={fadeOut ? styles.fadeOut : ''}>
-                    <a href="#inicio" onClick={() => { toSetModalIsOpen() }}>INÍCIO</a>
-                    <a href="#sobre" onClick={() => { toSetModalIsOpen() }}>SOBRE</a>
-                    <a href="#SESSÃO" onClick={() => { toSetModalIsOpen() }}>SESSÃO</a>
-                    <a href="#SESSÃO" onClick={() => { toSetModalIsOpen() }}>SESSÃO</a>
-                    <a href="#SESSÃO" onClick={() => { toSetModalIsOpen() }}>SESSÃO</a>
-                </nav>
-            </section>}
 
+            {modalIsOpen &&
+                <section className={styles.menuOpen}>
+                    <nav className={fadeOut ? styles.fadeOut : ''}>
+                        <a href="#inicio" onClick={() => { toSetModalIsOpen() }}>INÍCIO</a>
+                        <a href="#sobre" onClick={() => { toSetModalIsOpen() }}>SOBRE</a>
+                        <a href="#SESSÃO" onClick={() => { toSetModalIsOpen() }}>SESSÃO</a>
+                        <a href="#SESSÃO" onClick={() => { toSetModalIsOpen() }}>SESSÃO</a>
+                        <a href="#SESSÃO" onClick={() => { toSetModalIsOpen() }}>SESSÃO</a>
+                    </nav>
+                </section>
+            }
             <div>
                 <ButtonDarkMode />
             </div>

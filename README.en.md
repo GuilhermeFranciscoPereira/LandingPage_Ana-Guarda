@@ -30,7 +30,7 @@
 
 ## 🛎️ Key updates in this commit
 
-### `src/Sections/Methodology:` This section presents the methodology used, highlighting the practical and personalized steps used to ensure effective English conversation learning. The goal is to clearly and visually demonstrate how the student will be guided to real progress.
+### `Refactor:` Small changes just focusing on improving structure and readability
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 

@@ -31,7 +31,7 @@
 
 ## 🛎️ Atualizações principais deste commit
 
-### `src/Sections/Methodology:` Esta seção apresenta a metodologia utilizada, destacando as etapas práticas e personalizadas usadas para garantir o aprendizado eficaz de conversação em inglês. O objetivo é mostrar de forma clara e visual como o aluno será conduzido ao progresso real.
+### `Refactor:` Pequenas alterações apenas com foco em melhorar estrutura e legibilidade
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 

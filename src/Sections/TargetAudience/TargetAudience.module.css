@@ -10,21 +10,21 @@
     color: var(--text-color);
 }
 
-.courseContainer>.courseTitle {
+.courseContainer > .courseTitle {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 2rem;
     text-align: center;
     letter-spacing: 1px;
     color: var(--text-color);
-    transition: transform 0.3s ease, color 0.3s ease;
+    transition: transform .3s ease, color .3s ease;
 }
 
-.courseContainer>.courseTitle>span {
+.courseContainer > .courseTitle > span {
     color: var(--purple-primary);
 }
 
-.courseContainer>.gridContainer {
+.courseContainer > .gridContainer {
     width: 100%;
     max-width: 1200px;
     display: grid;
@@ -33,7 +33,7 @@
     align-content: center;
 }
 
-.courseContainer>.gridContainer>.gridItem {
+.courseContainer > .gridContainer > .gridItem {
     border-radius: 12px;
     padding: 1.5rem;
     display: flex;
@@ -45,30 +45,30 @@
     transition: transform .3s ease;
 }
 
-.courseContainer>.gridContainer>.gridItem:hover {
+.courseContainer > .gridContainer > .gridItem:hover {
     cursor: pointer;
     transform: scale(1.05);
 }
 
-.courseContainer>.gridContainer>.gridItem>.icon {
+.courseContainer > .gridContainer > .gridItem > .icon {
     font-size: 3rem;
     margin-bottom: 1rem;
     transition: transform .6s ease, color 0s;
 }
 
-.courseContainer>.gridContainer>.gridItem:hover>.icon {
+.courseContainer > .gridContainer > .gridItem:hover > .icon {
     color: var(--purple-primary);
     transform: rotate(360deg) scale(1.2);
 }
 
-.courseContainer>.gridContainer>.gridItem>p {
+.courseContainer > .gridContainer > .gridItem > p {
     font-size: 1rem;
     color: var(--text-color);
     line-height: 1.4;
-    transition: color 0.3s ease;
+    transition: color .3s ease;
 }
 
-.courseContainer>.gridContainer>.gridItem:hover>p {
+.courseContainer > .gridContainer > .gridItem:hover > p {
     color: var(--purple-primary);
 }
 

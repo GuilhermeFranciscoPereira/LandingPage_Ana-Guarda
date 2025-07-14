@@ -9,7 +9,7 @@
     color: var(--text-color);
 }
 
-.WhyTakeClassWithMe>.containerWhyTakeClassWithMe>.headlineWhyTakeClassWithMe {
+.WhyTakeClassWithMe > .containerWhyTakeClassWithMe > .headlineWhyTakeClassWithMe {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,16 +18,16 @@
     margin-bottom: 2rem;
 }
 
-.WhyTakeClassWithMe>.containerWhyTakeClassWithMe>.headlineWhyTakeClassWithMe>.textHeadlineWhyTakeClassWithMe>h2 {
+.WhyTakeClassWithMe > .containerWhyTakeClassWithMe > .headlineWhyTakeClassWithMe > .textHeadlineWhyTakeClassWithMe > h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
 }
 
-.WhyTakeClassWithMe>.containerWhyTakeClassWithMe>.headlineWhyTakeClassWithMe>.textHeadlineWhyTakeClassWithMe>h2>span {
+.WhyTakeClassWithMe > .containerWhyTakeClassWithMe > .headlineWhyTakeClassWithMe > .textHeadlineWhyTakeClassWithMe > h2 > span {
     color: var(--purple-primary);
 }
 
-.WhyTakeClassWithMe>.containerWhyTakeClassWithMe>.headlineWhyTakeClassWithMe>.textHeadlineWhyTakeClassWithMe>p {
+.WhyTakeClassWithMe > .containerWhyTakeClassWithMe > .headlineWhyTakeClassWithMe > .textHeadlineWhyTakeClassWithMe > p {
     font-size: 1.5rem;
     color: var(--text-color);
     font-weight: 500;
@@ -35,13 +35,13 @@
     max-width: 900px;
 }
 
-.WhyTakeClassWithMe>.containerWhyTakeClassWithMe>.contentBenefits {
+.WhyTakeClassWithMe > .containerWhyTakeClassWithMe > .contentBenefits {
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
 
-.WhyTakeClassWithMe>.containerWhyTakeClassWithMe>.contentBenefits>.boxBenefits {
+.WhyTakeClassWithMe > .containerWhyTakeClassWithMe > .contentBenefits > .boxBenefits {
     display: flex;
     flex-direction: column;
     width: 23%;
@@ -56,26 +56,26 @@
     transition: .3s ease-in-out;
 }
 
-.WhyTakeClassWithMe>.containerWhyTakeClassWithMe>.contentBenefits>.boxBenefits:hover {
+.WhyTakeClassWithMe > .containerWhyTakeClassWithMe > .contentBenefits > .boxBenefits:hover {
     border: 2px solid var(--purple-primary);
     transform: scale(1.05);
     z-index: 2;
     background-color: var(--background);
 }
 
-.WhyTakeClassWithMe>.containerWhyTakeClassWithMe>.contentBenefits>.boxBenefits:hover>svg {
+.WhyTakeClassWithMe > .containerWhyTakeClassWithMe > .contentBenefits > .boxBenefits:hover > svg {
     fill: var(--purple-primary);
 }
 
-.WhyTakeClassWithMe>.containerWhyTakeClassWithMe>.contentBenefits>.boxBenefits:hover>p>span {
+.WhyTakeClassWithMe > .containerWhyTakeClassWithMe > .contentBenefits > .boxBenefits:hover > p > span {
     color: var(--purple-primary);
 }
 
-.WhyTakeClassWithMe>.containerWhyTakeClassWithMe>.contentBenefits>.boxBenefits:hover>p>a {
+.WhyTakeClassWithMe > .containerWhyTakeClassWithMe > .contentBenefits > .boxBenefits:hover > p > a {
     border-bottom: 1px solid var(--text-color);
 }
 
-.WhyTakeClassWithMe>.containerWhyTakeClassWithMe>.contentBenefits>.boxBenefits>svg {
+.WhyTakeClassWithMe > .containerWhyTakeClassWithMe > .contentBenefits > .boxBenefits > svg {
     fill: var(--background-reverse);
     margin: 10px auto;
     height: 50px;
@@ -83,13 +83,13 @@
     transition: .6s;
 }
 
-.WhyTakeClassWithMe>.containerWhyTakeClassWithMe>.contentBenefits>.boxBenefits>h3 {
+.WhyTakeClassWithMe > .containerWhyTakeClassWithMe > .contentBenefits > .boxBenefits > h3 {
     font-size: 1.6rem;
     text-align: center;
     color: var(--text-color);
 }
 
-.WhyTakeClassWithMe>.containerWhyTakeClassWithMe>.contentBenefits>.boxBenefits>p {
+.WhyTakeClassWithMe > .containerWhyTakeClassWithMe > .contentBenefits > .boxBenefits > p {
     color: var(--text-color);
     text-align: justify;
     font-size: 1rem;
@@ -97,19 +97,19 @@
     line-height: 1.6;
 }
 
-.WhyTakeClassWithMe>.containerWhyTakeClassWithMe>.contentBenefits>.boxBenefits>p>a {
+.WhyTakeClassWithMe > .containerWhyTakeClassWithMe > .contentBenefits > .boxBenefits > p > a {
     text-decoration: none;
     color: inherit;
     border-bottom: 1px solid transparent;
-    transition: border-color 0.3s ease;
+    transition: border-color .3s ease;
 }
 
 @media screen and (max-width: 1024px) {
-    .WhyTakeClassWithMe>.containerWhyTakeClassWithMe>.contentBenefits {
+    .WhyTakeClassWithMe > .containerWhyTakeClassWithMe > .contentBenefits {
         flex-wrap: wrap;
     }
 
-    .WhyTakeClassWithMe>.containerWhyTakeClassWithMe>.contentBenefits>.boxBenefits {
+    .WhyTakeClassWithMe > .containerWhyTakeClassWithMe > .contentBenefits > .boxBenefits {
         width: 46%;
     }
 }
@@ -120,34 +120,34 @@
         margin-top: 100px;
     }
 
-    .WhyTakeClassWithMe>.containerWhyTakeClassWithMe>.headlineWhyTakeClassWithMe>.textHeadlineWhyTakeClassWithMe>h2 {
+    .WhyTakeClassWithMe > .containerWhyTakeClassWithMe > .headlineWhyTakeClassWithMe > .textHeadlineWhyTakeClassWithMe > h2 {
         font-size: 2.5rem;
     }
 
-    .WhyTakeClassWithMe>.containerWhyTakeClassWithMe>.contentBenefits {
+    .WhyTakeClassWithMe > .containerWhyTakeClassWithMe > .contentBenefits {
         flex-wrap: wrap;
     }
 
-    .WhyTakeClassWithMe>.containerWhyTakeClassWithMe>.contentBenefits>.boxBenefits {
+    .WhyTakeClassWithMe > .containerWhyTakeClassWithMe > .contentBenefits > .boxBenefits {
         width: 95%;
         gap: 1.5rem;
         padding: 30px;
     }
 
-    .WhyTakeClassWithMe>.containerWhyTakeClassWithMe>.contentBenefits>.boxBenefits:hover {
+    .WhyTakeClassWithMe > .containerWhyTakeClassWithMe > .contentBenefits > .boxBenefits:hover {
         border: 2px solid var(--purple-primary);
         transform: scale(1.05);
     }
 
-    .WhyTakeClassWithMe>.containerWhyTakeClassWithMe>.contentBenefits>.boxBenefits>h3 {
+    .WhyTakeClassWithMe > .containerWhyTakeClassWithMe > .contentBenefits > .boxBenefits > h3 {
         font-size: 1.8rem;
     }
 
-    .WhyTakeClassWithMe>.containerWhyTakeClassWithMe>.contentBenefits>.boxBenefits>p {
+    .WhyTakeClassWithMe > .containerWhyTakeClassWithMe > .contentBenefits > .boxBenefits > p {
         font-size: 1.2rem;
     }
 
-    .WhyTakeClassWithMe>.containerWhyTakeClassWithMe>.contentBenefits>.boxBenefits:last-child {
+    .WhyTakeClassWithMe > .containerWhyTakeClassWithMe > .contentBenefits > .boxBenefits:last-child {
         margin-bottom: 50px;
     }
 }
