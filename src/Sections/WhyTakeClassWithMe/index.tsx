@@ -20,17 +20,19 @@ export default function WhyTakeClassWithMe(): React.ReactElement {
                         <FaComments className={styles.icon} />
                         <h3>Conversação: o melhor método</h3>
                         <p>
-                            Estudos mostram que o Communicative Language Teaching acelera a aquisição de vocabulário e a fluência ao priorizar a interação.
+                            Estudos mostram que a abordagem comunicativa acelera a aquisição de vocabulário e a fluência ao priorizar a interação.
                             <br />
                             <span>• Fonte:</span>{' '}
-                            <a href="https://en.wikipedia.org/wiki/Communicative_language_teaching" target="_blank" >
-                                Communicative Language Teaching (Wikipedia)
+                            <a
+                                href="https://www.chatclass.ai/blog/communicative-language-teaching-clt-nas-salas-de-aula-do-brasil"
+                                target="_blank"
+                            >
+                                CLT nas salas de aula do Brasil (ChatClass)
                             </a>
                             <br />
                             <span>• Benefício:</span> Aprenda de forma dinâmica e aplique o inglês desde a primeira aula.
                         </p>
                     </div>
-
                     <div className={styles.boxBenefits} data-aos="fade-up">
                         <FaChalkboardTeacher className={styles.icon} />
                         <h3>Aulas particulares personalizadas</h3>
@@ -38,8 +40,11 @@ export default function WhyTakeClassWithMe(): React.ReactElement {
                             Aulas individuais permitem foco total nas suas necessidades, corrigindo erros em tempo real e ajustando o ritmo do curso ao seu aprendizado.
                             <br />
                             <span>• Fonte:</span>{' '}
-                            <a href="https://www.ef.com/wwen/blog/language/5-reasons-why-private-tutoring-will-improve-your-language-learning/" target="_blank" >
-                                EF Blog: Private Tutoring
+                            <a
+                                href="https://www.ipschool.com.br/quais-sao-os-beneficios-de-aulas-particulares-de-ingles/"
+                                target="_blank"
+                            >
+                                Benefícios de aulas particulares de inglês (IP School)
                             </a>
                             <br />
                             <span>• Benefício:</span> Progresso rápido e material totalmente alinhado aos seus objetivos.
@@ -53,8 +58,11 @@ export default function WhyTakeClassWithMe(): React.ReactElement {
                             O inglês é a língua franca global, fundamental para oportunidades de carreira e conexões internacionais.
                             <br />
                             <span>• Fonte:</span>{' '}
-                            <a href="https://www.britishcouncil.org/voices-magazine/why-learn-english" target="_blank" >
-                                Why Learn English (British Council)
+                            <a
+                                href="https://athonedu.com.br/blog/importancia-do-ingles-mercado-de-trabalho/"
+                                target="_blank"
+                            >
+                                A Importância do Inglês no Mercado de Trabalho (Athon Blog)
                             </a>
                             <br />
                             <span>• Benefício:</span> Amplie sua rede e acelere seu crescimento profissional.
@@ -68,13 +76,17 @@ export default function WhyTakeClassWithMe(): React.ReactElement {
                             Aqui, suas metas e interesses guiam cada aula. Você escolhe os temas, cenários e desafios para tornar o aprendizado mais motivador e relevante.
                             <br />
                             <span>• Fonte:</span>{' '}
-                            <a href="https://en.wikipedia.org/wiki/Autonomy_in_language_learning" target="_blank" >
-                                Autonomy in language learning (Wikipedia)
+                            <a
+                                href="https://www.scielo.br/j/edur/a/JyS8KLLrXfTP5Dz9QZgjtxv/"
+                                target="_blank"
+                            >
+                                Autonomia no ensino-aprendizagem de línguas (SciELO)
                             </a>
                             <br />
                             <span>• Benefício:</span> Maior engajamento e responsabilidade pelo seu próprio progresso.
                         </p>
                     </div>
+
                 </div>
             </div>
         </section>

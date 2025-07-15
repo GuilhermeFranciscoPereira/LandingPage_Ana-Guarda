@@ -10,8 +10,6 @@ export default function RealClassVideo(): React.ReactElement {
                     observamos situações reais, corrigimos pronúncia na hora e aplicamos vocabulário útil para comunicação imediata.
                     Aqui, cada diálogo é uma oportunidade de imersão total: você acompanha minha orientação passo a passo,
                     experimenta falar sem medo e ganha a confiança necessária para usar o inglês daqui para a vida.
-                    <br />
-                    Aperte o play e sinta o ritmo descontraído e eficaz da nossa metodologia!
                 </p>
             </div>
             <div className={styles.videoDiv} data-aos="fade-up">

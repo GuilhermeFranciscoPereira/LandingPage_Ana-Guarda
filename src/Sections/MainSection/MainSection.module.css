@@ -7,25 +7,26 @@
     position: relative;
     gap: 16px;
     width: 100vw;
-    height: 90vh;
+    min-height: 90vh;
     color: var(--text-color);
 }
 
-.main>.firstViewMainDiv {
+.main > .firstViewMainDiv {
     font-size: clamp(1rem, 2vw + .8rem, 3rem);
 }
 
-.main>.firstViewMainDiv>h2 {
+.main > .firstViewMainDiv > h2 {
     font-weight: lighter;
+    margin: 20px 0px;
 }
 
-.main>.additionalText>p {
+.main > .additionalText > p {
     font-size: clamp(1.2rem, 1.5vw + 1rem, 2rem);
     max-width: 1200px;
     color: var(--text-color);
 }
 
-.main>.additionalText>p>.typingEffect {
+.main > .additionalText > p > .typingEffect {
     border-right: 2px solid var(--purple-primary);
     padding-right: 3px;
     color: var(--purple-primary);
@@ -43,11 +44,11 @@
     }
 }
 
-.main>a {
+.main > a {
     text-decoration: none;
 }
 
-.main>a>.buttonAbout {
+.main > a > .buttonAbout {
     position: relative;
     display: flex;
     align-items: center;
@@ -58,7 +59,7 @@
     color: var(--text-color);
 }
 
-.main>a>.buttonAbout::before {
+.main > a > .buttonAbout::before {
     content: "";
     position: absolute;
     top: 10;
@@ -70,14 +71,14 @@
     background: var(--purple-primary);
 }
 
-.main>a>.buttonAbout>span {
+.main > a > .buttonAbout > span {
     position: relative;
     font-size: clamp(1.2rem, 1.5vw + 1rem, 2rem);
     font-weight: 700;
     letter-spacing: 2px;
 }
 
-.main>a>.buttonAbout>svg {
+.main > a > .buttonAbout > svg {
     position: relative;
     margin-left: 10px;
     top: 0;
@@ -90,36 +91,42 @@
     stroke: var(--purple-primary);
 }
 
-.main>a>.buttonAbout:hover::before {
+.main > a > .buttonAbout:hover::before {
     width: 100%;
     background: var(--purple-primary);
 }
 
-.main>a>.buttonAbout:hover>span,
-.main>a>.buttonAbout:hover>svg {
+.main > a > .buttonAbout:hover > span,
+.main > a > .buttonAbout:hover > svg {
     color: white;
     stroke: var(--text-color-reverse);
 }
 
-.main>a>.buttonAbout:hover>svg {
+.main > a > .buttonAbout:hover > svg {
     transform: translateX(10px);
 }
 
-.main>a>.buttonAbout:active {
+.main > a > .buttonAbout:active {
     transform: scale(.95);
 }
 
 @media screen and (max-width: 480px) {
+
     .main {
-        height: 100vh;
+        height: 80vh;
     }
 
-    .main>.additionalText>p {
+    .main > a > .buttonAbout::before {
+        top: 5;
+    }
+
+
+    .main > .additionalText > p {
         font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
     }
 
 
-    .main>.additionalText>p>.typingEffect>.hidenMobile {
+    .main > .additionalText > p > .typingEffect > .hidenMobile {
         display: inline;
         color: transparent;
     }

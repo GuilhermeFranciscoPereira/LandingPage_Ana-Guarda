@@ -19,8 +19,11 @@
 }
 
 .WhyTakeClassWithMe > .containerWhyTakeClassWithMe > .headlineWhyTakeClassWithMe > .textHeadlineWhyTakeClassWithMe > h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--text-color);
 }
 
 .WhyTakeClassWithMe > .containerWhyTakeClassWithMe > .headlineWhyTakeClassWithMe > .textHeadlineWhyTakeClassWithMe > h2 > span {

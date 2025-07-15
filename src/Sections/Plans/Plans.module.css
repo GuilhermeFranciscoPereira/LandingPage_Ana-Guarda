@@ -15,9 +15,10 @@
 }
 
 .plansSection > .headlinePlans > h2 {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 700;
-    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    text-align: center;
     color: var(--text-color);
 }
 
@@ -136,6 +137,11 @@
 }
 
 @media screen and (max-width: 768px) {
+    .plansSection > .headlinePlans > h2 {
+        font-size: 3rem;
+        margin: 0px;
+    }
+
     .plansSection > .cardsPlans {
         gap: 1.5rem;
     }

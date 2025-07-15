@@ -31,7 +31,7 @@
 
 ## 🛎️ Atualizações principais deste commit
 
-### `src/components/Header:` Adicionado novos items ao menu hamburguer e fixado o Header para toda a Landing page
+### `tsx / css:` Troca de textos e estilizações css pequenas
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 

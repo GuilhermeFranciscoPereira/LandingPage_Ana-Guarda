@@ -30,7 +30,7 @@ export default function Faq(): React.ReactElement {
                 </details>
                 <details className={styles.faqItem} data-aos="fade-up">
                     <summary className={styles.question}>Quais as formas de pagamento?</summary>
-                    <p className={styles.answer}>Você pode pagar via Pix, cartão de crédito ou transferência bancária..</p>
+                    <p className={styles.answer}>Você pode pagar via Pix, cartão de crédito ou transferência bancária.</p>
                 </details>
                 <details className={styles.faqItem} data-aos="fade-up">
                     <summary className={styles.question}>Em qual plataforma as aulas são realizadas?</summary>

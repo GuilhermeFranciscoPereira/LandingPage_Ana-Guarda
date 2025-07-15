@@ -30,7 +30,7 @@
 
 ## 🛎️ Key updates in this commit
 
-### `src/components/Header:` Added new items to the hamburger menu and fixed the Header for the entire Landing page
+### `tsx/css:` Small css text and styling swap
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 
