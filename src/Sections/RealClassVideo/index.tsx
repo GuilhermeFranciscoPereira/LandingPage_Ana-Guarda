@@ -2,7 +2,7 @@ import styles from '@/Sections/RealClassVideo/RealClassVideo.module.css';
 
 export default function RealClassVideo(): React.ReactElement {
     return (
-        <section className={styles.RealClassVideoSection}>
+        <section className={styles.RealClassVideoSection} id='videoReal'>
             <div className={styles.headlineRealClassVideo}>
                 <h2 data-aos="fade-up">Aula Real !</h2>
                 <p data-aos="fade-up">

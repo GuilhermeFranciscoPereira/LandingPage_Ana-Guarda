@@ -3,7 +3,7 @@ import { FaMicrophone, FaChalkboardTeacher, FaWallet, FaClock, FaLightbulb, FaHa
 
 export default function TargetAudience(): React.ReactElement {
     return (
-        <section className={styles.courseContainer}>
+        <section className={styles.courseContainer} id='objetivos'>
             <h2 className={styles.courseTitle} data-aos="fade-up">Minhas aulas são para <span>você</span> que...</h2>
             <div className={styles.gridContainer}>
                 <div className={styles.gridItem} data-aos="fade-up">

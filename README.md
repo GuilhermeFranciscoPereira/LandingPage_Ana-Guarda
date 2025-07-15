@@ -31,7 +31,7 @@
 
 ## 🛎️ Atualizações principais deste commit
 
-### `src/Sections/Faq:` Reunimos às dúvidas comuns dos usuários e suas respostas, facilitando o entendimento dos serviços.
+### `src/components/Header:` Adicionado novos items ao menu hamburguer e fixado o Header para toda a Landing page
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 

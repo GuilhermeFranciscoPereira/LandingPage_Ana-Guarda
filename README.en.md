@@ -30,7 +30,7 @@
 
 ## 🛎️ Key updates in this commit
 
-### `src/Sections/Faq:` We have gathered users' common questions and their answers, making it easier to understand the services.
+### `src/components/Header:` Added new items to the hamburger menu and fixed the Header for the entire Landing page
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 

@@ -3,7 +3,7 @@ import styles from '@/Sections/Students/Students.module.css';
 
 export default function Students(): React.ReactElement {
     return (
-        <section className={styles.studentsSection}>
+        <section className={styles.studentsSection} id='alunos'>
             <div className={styles.studentsContainer} data-aos="fade-up">
                 <div className={styles.headlineStudents}>
                     <h2 className={styles.titleStudents}>Alunos</h2>

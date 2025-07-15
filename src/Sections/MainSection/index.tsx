@@ -3,7 +3,7 @@ import styles from '@/Sections/MainSection/MainSection.module.css';
 
 export default function MainSection(): React.ReactElement {
     return (
-        <main className={styles.main} data-aos="fade-up" data-aos-duration="3000">
+        <main className={styles.main} id='inicio' data-aos="fade-up" data-aos-duration="3000">
             <div className={styles.firstViewMainDiv}>
                 <h1>Seu Passaporte para o Mundo</h1>
                 <h2>Aprenda inglês prático com foco em conversação</h2>

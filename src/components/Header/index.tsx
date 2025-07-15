@@ -4,11 +4,11 @@ import styles from '@/components/Header/Header.module.css';
 import ButtonDarkMode from '@/components/Buttons/ButtonDarkMode/index';
 
 export default function Header(): React.ReactElement {
-    const { modalIsOpen, doAnimation, fadeOut, toSetModalIsOpen } = useHeader();
+    const { modalIsOpen, doAnimation, fadeOut, isScrolled, toSetModalIsOpen } = useHeader();
 
     return (
-        <header className={styles.header} id='inicio'>
-            <section className={styles.menuClosed}>
+        <header className={styles.header}>
+            <section className={`${styles.menuClosed} ${isScrolled ? styles.faded : ''}`} >
                 <label className={styles.hamburguerToToggleSection}>
                     <input type="checkbox" id="menuToggle" onChange={() => { toSetModalIsOpen() }} checked={doAnimation}></input>
                     <svg viewBox="0 0 32 32">
@@ -25,13 +25,16 @@ export default function Header(): React.ReactElement {
                     <nav className={fadeOut ? styles.fadeOut : ''}>
                         <a href="#inicio" onClick={() => { toSetModalIsOpen() }}>INÍCIO</a>
                         <a href="#sobre" onClick={() => { toSetModalIsOpen() }}>SOBRE</a>
-                        <a href="#SESSÃO" onClick={() => { toSetModalIsOpen() }}>SESSÃO</a>
-                        <a href="#SESSÃO" onClick={() => { toSetModalIsOpen() }}>SESSÃO</a>
-                        <a href="#SESSÃO" onClick={() => { toSetModalIsOpen() }}>SESSÃO</a>
+                        <a href="#beneficios" onClick={() => { toSetModalIsOpen() }}>BENEFÍCIOS</a>
+                        <a href="#videoReal" onClick={() => { toSetModalIsOpen() }}>AULA REAL</a>
+                        <a href="#objetivos" onClick={() => { toSetModalIsOpen() }}>PARA QUEM SÃO AS AULAS?</a>
+                        <a href="#metodologia" onClick={() => { toSetModalIsOpen() }}>METODOLOGIA</a>
+                        <a href="#alunos" onClick={() => { toSetModalIsOpen() }}>ALUNOS</a>
+                        <a href="#planos" onClick={() => { toSetModalIsOpen() }}>PLANOS</a>
                     </nav>
                 </section>
             }
-            <div>
+            <div className={`${styles.darkMenuDiv} ${isScrolled ? styles.faded : ''}`}>
                 <ButtonDarkMode />
             </div>
         </header>
