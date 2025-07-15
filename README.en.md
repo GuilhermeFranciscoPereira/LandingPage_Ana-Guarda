@@ -30,7 +30,7 @@
 
 ## 🛎️ Key updates in this commit
 
-### `tsx/css:` Small css text and styling swap
+### `src/components/Footer:` Footer of the landing page, informing of all rights reserved and informing who developed the landing page
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 
@@ -63,6 +63,7 @@
 
 - `./src/components`: This is where the components will be reused in various parts of the code. In this project, we have the following components:
     - Buttons: Responsible for the website's buttons.
+    - Footer: Footer of the landing page, informing of all rights reserved and informing who developed the landing page
     - Header: Header located in the top corner of the landing page.
 
 - `./src/Sections:` Folder responsible for grouping all our sections:

@@ -1,6 +1,7 @@
 import Faq from "@/Sections/Faq";
 import Plans from "@/Sections/Plans";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import Students from "@/Sections/Students";
 import MainSection from "@/Sections/MainSection";
 import AboutWhoAmI from "@/Sections/AboutWhoAmI";
@@ -24,6 +25,7 @@ export default function Home(): React.ReactElement {
       <Students />
       <Plans />
       <Faq />
+      <Footer />
     </>
   );
 }

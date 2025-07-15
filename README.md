@@ -31,7 +31,7 @@
 
 ## 🛎️ Atualizações principais deste commit
 
-### `tsx / css:` Troca de textos e estilizações css pequenas
+### `src/components/Footer:` Rodapé da landing page, informando de todos os direitos reservados e informando quem desenvolveu a landing page
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 
@@ -64,6 +64,7 @@
 
 - `./src/components:` Onde está os componentes que serão reutilizados em diversas partes do código. Neste projeto temos os components:
     - Buttons: Responsável pelos botões do site.
+    - Footer: Rodapé da landing page, informando de todos os direitos reservados e informando quem desenvolveu a landing page
     - Header: Cabeçalho que se encontra no canto superior da landing page
 
 - `./src/Sections:` Pasta responsável por agrupar todas as nossas seções:
