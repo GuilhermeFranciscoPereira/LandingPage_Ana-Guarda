@@ -1,0 +1,153 @@
+.plansSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 4rem 1rem;
+    background: var(--background);
+    color: var(--text-color);
+}
+
+.plansSection > .headlinePlans {
+    text-align: center;
+    margin-bottom: 7rem;
+}
+
+.plansSection > .headlinePlans > h2 {
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--text-color);
+}
+
+.plansSection > .headlinePlans > h2 > span {
+    color: var(--purple-primary);
+}
+
+.plansSection > .cardsPlans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.plansSection > .cardsPlans > .cardPlans {
+    flex: 1 1 300px;
+    max-width: 400px;
+    cursor: pointer;
+    min-height: 55vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background: var(--background);
+    border: 2px solid var(--purple-primary);
+    border-radius: 50px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.plansSection > .cardsPlans > .cardPlans:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 24px rgba(0, 0, 0, 0.1);
+    border-color: var(--purple-primary);
+}
+
+.plansSection > .cardsPlans > .cardPlans:hover > .price,
+.plansSection > .cardsPlans > .cardPlans:hover > h3 {
+    color: var(--purple-primary);
+}
+
+.plansSection > .cardsPlans > .cardPlans > .price {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    color: var(--text-color);
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.plansSection > .cardsPlans > .cardPlans.cardFeatured {
+    box-shadow: 2px 2px 10px var(--purple-primary);
+    max-width: 450px;
+    min-height: 63vh;
+    transform: translateY(-2vw);
+}
+
+.plansSection > .cardsPlans > .cardPlans.cardFeatured:hover {
+    transform: translateY(-2.5vw);
+}
+
+.plansSection > .cardsPlans > .cardPlans > .icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    width: 100%;
+    transition: transform .6s ease, color 0s;
+}
+
+.plansSection > .cardsPlans > .cardPlans:hover > .icon {
+    color: var(--purple-primary);
+    transform: rotate(360deg) scale(1.2);
+}
+
+.plansSection > .cardsPlans > .cardPlans > h3 {
+    margin: 0 0 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: inherit;
+    text-align: center;
+}
+
+.plansSection > .cardsPlans > .cardPlans > p:not(.price) {
+    flex-grow: 1;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin: 1.5rem 0rem;
+    text-align: center;
+}
+
+.plansSection > .cardsPlans > .cardPlans.cardFeatured > p:not(.price) {
+    margin: 3.5rem 0rem;
+}
+
+.plansSection > .cardsPlans > .cardPlans > .buttonCTA {
+    align-self: center;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: var(--purple-primary);
+    color: var(--text-color-reverse);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.plansSection > .cardsPlans > .cardPlans.cardFeatured:hover > .icon {
+    transform: rotate(360deg) scale(1.2);
+}
+
+.plansSection > .cardsPlans > .cardPlans > .buttonCTA:hover {
+    transform: scale(1.05);
+    background: var(--background-reverse);
+}
+
+@media screen and (max-width: 768px) {
+    .plansSection > .cardsPlans {
+        gap: 1.5rem;
+    }
+
+    .plansSection > .cardsPlans > .cardPlans {
+        flex: 1 1 100%;
+        max-width: none;
+        padding: 1.5rem;
+        height: auto;
+    }
+
+    .plansSection > .cardsPlans > .cardPlans.cardFeatured > p:not(.price) {
+        margin: 1.5rem;
+    }
+}

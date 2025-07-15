@@ -31,7 +31,10 @@
 
 ## 🛎️ Atualizações principais deste commit
 
-### `src/Sections/MainSection/TypingWords:` Resolvido para não ficar "quebrando" o layout no mobile
+### `nodemailer:` Instalado a biblioteca nodemailer para o envio do e-mail após preenchimento do formulário
+### `src/Sections/Plans:` Criado a seção de planos mostrando os 3 planos principais: Pacote mensal; Aula avulsa; Mentoria VIP; e cada um possui o botão: 'Entrar em contato' que após ser clicado mostra o modal que está em:
+### `src/Sections/Plans/ModalForm:` Modal responsável por receber do usuário seus dados para definir seu nível de inglês e passar já formatado para a professora, enviando estes dados através de um método HTTP (POST) para a rota de src/app/api/sendStudentEmail
+### `src/api/sendStudentEmail:` Rota de POST destinada a receber os dados do usuário que vieram atráves de Plans/ModalForm e enviar um e-mail de confirmação de novo aluno
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 
@@ -55,9 +58,12 @@
 
 ## 🛈 Como o projeto está estruturado
 
+- `./public/assets:` Onde está todas as fotos e arquivos estáticos que vão ser usadas no projeto.
+
 - `./src/app:` Este projeto é em Next então temos o núcleo da landing page estando totalmente aqui na página app, onde o arquivo page.tsx é o que é renderizado junto dos componentes que é invocado nele.
 
-- `./src/assets:` Onde está todas as fotos e arquivos estáticos que vão ser usadas no projeto.
+- `./src/app/api:` É o nosso 'back-end' interno do next, respondendo à métodos HTTP.
+    - sendStudentsEmail: Rota de POST destinada a receber os dados do usuário que vieram atráves de Plans/ModalForm e enviar um e-mail de confirmação de novo aluno
 
 - `./src/components:` Onde está os componentes que serão reutilizados em diversas partes do código. Neste projeto temos os components:
     - Buttons: Responsável pelos botões do site.
@@ -69,6 +75,8 @@
         - TypingWords: Criado somente para utilizar o 'use client' em uma parte menor do código, componente para a troca de palavras abaixo do subtitulo
     - Methodology: Esta seção apresenta a metodologia utilizada, destacando as etapas práticas e personalizadas usadas para garantir o aprendizado eficaz de conversação em inglês. O objetivo é mostrar de forma clara e visual como o aluno será conduzido ao progresso real.
     - RealClassVideo: Adicionado a sessão para mostrar um pouco de uma aula real gravada. Utilizando o youtube e a URL vem através do .env
+    - Plans: Criado a seção de planos mostrando os 3 planos principais: Pacote mensal; Aula avulsa; Mentoria VIP; e cada um possui o botão: 'Entrar em contato' que após ser clicado mostra o modal que está em:
+        - ModalForm: Modal responsável por receber do usuário seus dados para definir seu nível de inglês e passar já formatado para a professora, enviando estes dados através de um método HTTP (POST) para a rota de src/app/api/sendStudentEmail
     - Students: Mostra 3 alunos da professora e conta brevemente suas histórias
     - TargetAudience: Seção que apresenta as principais dores e motivações dos alunos, definindo claramente para quem as aulas são destinadas. Ajuda o visitante a se identificar e entender se a aula atende às suas necessidades.
     - WhyTakeClassWithMe: Seção onde mostra ao usuário os benefícios que a metodologia usada pela Ana é realmente útil, trazendo consigo dados real e com link para visualização completa.

@@ -12,7 +12,7 @@ export default function Students(): React.ReactElement {
                 <div className={styles.studentsCards}>
                     <div className={styles.student} data-aos="fade-right">
                         <div className={styles.imageWrapper}>
-                            <Image src={process.env.NEXT_PUBLIC_URL_PHOTO_STUDENT1 || ''} alt="Foto do Guilherme" width={100} height={100} quality={100} />
+                            <Image src={process.env.URL_PHOTO_STUDENT1 || '/assets/images/AboutWhoAmISection/photo_anaFlaviaGuarda.jpg'} alt="Foto do Guilherme" width={100} height={100} quality={100} />
                         </div>
                         <div className={styles.studentText}>
                             <div className={styles.contentTextStudent}>
@@ -23,7 +23,7 @@ export default function Students(): React.ReactElement {
                     </div>
                     <div className={styles.student} data-aos="fade-left">
                         <div className={styles.imageWrapper}>
-                            <Image src={process.env.NEXT_PUBLIC_URL_PHOTO_STUDENT2 || ''} alt="Foto do João" width={100} height={100} quality={100} />
+                            <Image src={process.env.URL_PHOTO_STUDENT2 || '/assets/images/AboutWhoAmISection/photo_anaFlaviaGuarda.jpg'} alt="Foto do João" width={100} height={100} quality={100} />
                         </div>
                         <div className={styles.studentText}>
                             <div className={styles.contentTextStudent}>
@@ -34,7 +34,7 @@ export default function Students(): React.ReactElement {
                     </div>
                     <div className={styles.student} data-aos="fade-right">
                         <div className={styles.imageWrapper}>
-                            <Image src={process.env.NEXT_PUBLIC_URL_PHOTO_STUDENT3 || ''} alt="Foto do Pedro" width={100} height={100} quality={100} />
+                            <Image src={process.env.URL_PHOTO_STUDENT3 || '/assets/images/AboutWhoAmISection/photo_anaFlaviaGuarda.jpg'} alt="Foto do Pedro" width={100} height={100} quality={100} />
                         </div>
                         <div className={styles.studentText}>
                             <div className={styles.contentTextStudent}>

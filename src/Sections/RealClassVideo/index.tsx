@@ -17,7 +17,7 @@ export default function RealClassVideo(): React.ReactElement {
             <div className={styles.videoDiv} data-aos="fade-up">
                 <iframe
                     className={styles.videoPlayer}
-                    src={process.env.NEXT_PUBLIC_URL_VIDEO_YOUTUBE}
+                    src={process.env.URL_VIDEO_YOUTUBE}
                     title="Aula real com a Ana Flávia"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen

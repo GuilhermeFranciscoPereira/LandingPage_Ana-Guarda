@@ -1,3 +1,4 @@
+import Plans from "@/Sections/Plans";
 import Header from "@/components/Header";
 import Students from "@/Sections/Students";
 import MainSection from "@/Sections/MainSection";
@@ -20,6 +21,7 @@ export default function Home(): React.ReactElement {
       <TargetAudience />
       <Methodology />
       <Students />
+      <Plans />
     </>
   );
 }
