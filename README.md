@@ -31,10 +31,7 @@
 
 ## 🛎️ Atualizações principais deste commit
 
-### `nodemailer:` Instalado a biblioteca nodemailer para o envio do e-mail após preenchimento do formulário
-### `src/Sections/Plans:` Criado a seção de planos mostrando os 3 planos principais: Pacote mensal; Aula avulsa; Mentoria VIP; e cada um possui o botão: 'Entrar em contato' que após ser clicado mostra o modal que está em:
-### `src/Sections/Plans/ModalForm:` Modal responsável por receber do usuário seus dados para definir seu nível de inglês e passar já formatado para a professora, enviando estes dados através de um método HTTP (POST) para a rota de src/app/api/sendStudentEmail
-### `src/api/sendStudentEmail:` Rota de POST destinada a receber os dados do usuário que vieram atráves de Plans/ModalForm e enviar um e-mail de confirmação de novo aluno
+### `src/Sections/Faq:` Reunimos às dúvidas comuns dos usuários e suas respostas, facilitando o entendimento dos serviços.
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 
@@ -71,6 +68,7 @@
 
 - `./src/Sections:` Pasta responsável por agrupar todas as nossas seções:
     - AboutWhoAmI: Esta é a seção de "Sobre" onde apresentamos quem é a Ana Flávia Guarda.
+    - Faq: Reunimos às dúvidas comuns dos usuários e suas respostas, facilitando o entendimento dos serviços.
     - MainSection: Onde temos a primeira seção da tela
         - TypingWords: Criado somente para utilizar o 'use client' em uma parte menor do código, componente para a troca de palavras abaixo do subtitulo
     - Methodology: Esta seção apresenta a metodologia utilizada, destacando as etapas práticas e personalizadas usadas para garantir o aprendizado eficaz de conversação em inglês. O objetivo é mostrar de forma clara e visual como o aluno será conduzido ao progresso real.

@@ -30,10 +30,7 @@
 
 ## 🛎️ Key updates in this commit
 
-### `nodemailer:` Installed the nodemailer library to send the email after filling out the form.
-### `src/Sections/Plans:` Created the plans section showing the three main plans: Monthly Package; Single Class; VIP Mentoring. Each has a 'Entrar em contato' button, which, when clicked, displays the modal at:
-### `src/Sections/Plans/ModalForm:` Modal responsible for receiving user data to define their English level and send it formatted to the teacher, sending this data via an HTTP method (POST) to the src/app/api/sendStudentEmail route
-### `src/api/sendStudentEmail:` POST route intended to receive user data from Plans/ModalForm and send a new student confirmation email
+### `src/Sections/Faq:` We have gathered users' common questions and their answers, making it easier to understand the services.
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 
@@ -70,6 +67,7 @@
 
 - `./src/Sections:` Folder responsible for grouping all our sections:
     - AboutWhoAmI: This is the "About" section where we introduce who Ana Flávia Guarda is.
+    - Faq: We have gathered users' common questions and their answers, making it easier to understand the services.
     - MainSection: This is where we have the first section of the screen.
         - TypingWords: Created solely to use the 'use client' in a smaller part of the code, a component for changing words below the subtitle.
     - Methodology: This section presents the methodology used, highlighting the practical and personalized steps used to ensure effective English conversation learning. The goal is to clearly and visually demonstrate how the student will be guided to real progress.
