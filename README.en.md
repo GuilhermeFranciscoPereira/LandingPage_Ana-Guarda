@@ -30,7 +30,15 @@
 
 ## 🛎️ Key updates in this commit
 
-### `src/components/Footer:` Footer of the landing page, informing of all rights reserved and informing who developed the landing page
+### `Commit made for changes made by the client`
+
+### `./src/app/api/sendStudentEmail:` Changed the validation for sending the email to the teacher.
+
+### `./src/Sections/Plans/QuestionnaireModal:` Changed the questions asked to the user.
+
+### `./src/Sections/Plans:` Changed the plan prices for promotion
+
+### `./src/Sections/Faq:` Changed question answers
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 
@@ -57,7 +65,7 @@
 - `./src/app:` This project is in Next, so we have the core of the landing page located entirely here on the app page, where the page.tsx file is what is rendered along with the components that are invoked in it.
 
 - `./src/app/api:` This is our internal Next backend, responding to HTTP methods.
-- sendStudentsEmail: POST route intended to receive user data from Plans/ModalForm and send a new student confirmation email.
+- sendStudentsEmail: POST route intended to receive user data from Plans/QuestionnaireModal and send a new student confirmation email.
 
 - `./src/assets:` Where are all the photos and static files that will be used in the project.
 
@@ -73,7 +81,7 @@
         - TypingWords: Created solely to use the 'use client' in a smaller part of the code, a component for changing words below the subtitle.
     - Methodology: This section presents the methodology used, highlighting the practical and personalized steps used to ensure effective English conversation learning. The goal is to clearly and visually demonstrate how the student will be guided to real progress.
     - Plans: Plans section showing the three main plans: Monthly Package; Single Class; VIP Mentoring. Each has a 'Entrar em contato' button, which, when clicked, displays the modal at:
-        - ModalForm: Modal responsible for receiving user data to define their English level and send it formatted to the teacher, sending this data via an HTTP method (POST) to the src/app/api/sendStudentEmail route
+        - QuestionnaireModal: Modal responsible for receiving user data to define their English level and send it formatted to the teacher, sending this data via an HTTP method (POST) to the src/app/api/sendStudentEmail route
     - RealClassVideo: Added a section to show a glimpse of a real recorded class. Using YouTube and the URL comes through .env.
     - Students: Shows 3 of the teacher's students and briefly tells their stories
     - TargetAudience: This section presents the main pain points and motivations of students, clearly defining who the classes are for. It helps the visitor identify themselves and understand if the class meets their needs.

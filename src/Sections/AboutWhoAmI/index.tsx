@@ -31,11 +31,13 @@ export default function AboutWhoAmI(): React.ReactElement {
                             <h2>Quem é <span>Ana Flávia Guarda?</span></h2>
                             <h3>
                                 <div data-aos="fade-left">
-                                    Eu sou Ana Flávia Guarda, tenho 20 anos e já visitei os Estados Unidos duas vezes, onde vivi experiências reais de imersão no idioma. Apaixonada por ensinar, vivo o inglês na prática e trago para cada aula situações cotidianas que estimulam você a falar com naturalidade e confiança.
+                                    Prazer, eu sou a Ana!, estudo inglês há muitos anos e, ao longo desse tempo, tive experiências internacionais que transformaram minha forma de aprender — e de ensinar.
+                                    Entendi, na prática, que a conversação é o que realmente aproxima a gente da fluência e da autoconfiança com o idioma.
                                 </div>
                                 <br />
                                 <div data-aos="fade-right">
-                                    Com paciência e dedicação, meu método valoriza a conversação acima da gramática engessada. Crio um ambiente acolhedor, onde cada erro se torna oportunidade de crescimento e cada palavra pronunciada é um passo rumo à verdadeira fluência. Aqui, você aprende a se comunicar de corpo e alma.
+                                    Por isso, criei essas aulas com um objetivo claro: oferecer um ambiente leve, respeitoso e livre de julgamentos, onde você possa praticar, errar, se soltar e, acima de tudo, evoluir.
+                                    Aqui, cada palavra falada é uma conquista — no seu ritmo, do seu jeito.
                                 </div>
                             </h3>
                         </div>
@@ -52,8 +54,8 @@ export default function AboutWhoAmI(): React.ReactElement {
                                 <div className={styles.card}>
                                     <Image
                                         src={'/assets/images/AboutWhoAmISection/photo_anaFlaviaGuarda.jpg'}
-                                        width={300}
-                                        height={300}
+                                        width={2000}
+                                        height={2000}
                                         alt="Foto do rosto da Ana Flávia Guarda"
                                         quality={100}
                                         className={styles.image}

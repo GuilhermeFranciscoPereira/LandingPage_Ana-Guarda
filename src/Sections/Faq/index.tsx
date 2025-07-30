@@ -18,7 +18,7 @@ export default function Faq(): React.ReactElement {
                 </details>
                 <details className={styles.faqItem} data-aos="fade-up">
                     <summary className={styles.question}>Qual a duração de cada aula?</summary>
-                    <p className={styles.answer}>Cada aula tem 1 hora de duração, o tempo ideal para manter o foco e a produtividade sem sobrecarregar.</p>
+                    <p className={styles.answer}>Cada aula tem 50 minutos de duração, o tempo ideal para manter o foco e a produtividade sem sobrecarregar.</p>
                 </details>
                 <details className={styles.faqItem} data-aos="fade-up">
                     <summary className={styles.question}>Posso solicitar temas específicos para as aulas?</summary>
@@ -30,11 +30,11 @@ export default function Faq(): React.ReactElement {
                 </details>
                 <details className={styles.faqItem} data-aos="fade-up">
                     <summary className={styles.question}>Quais as formas de pagamento?</summary>
-                    <p className={styles.answer}>Você pode pagar via Pix, cartão de crédito ou transferência bancária.</p>
+                    <p className={styles.answer}>Os pagamentos são realizados através do Pix ou cartão de débito/crédito.</p>
                 </details>
                 <details className={styles.faqItem} data-aos="fade-up">
                     <summary className={styles.question}>Em qual plataforma as aulas são realizadas?</summary>
-                    <p className={styles.answer}>As aulas acontecem via Discord, Zoom, Google Meat ou a plataforma que for melhor para você, agendamos o melhor método e dia através do WhatsApp. Não é necessário instalar nada novo!</p>
+                    <p className={styles.answer}>As aulas acontecem via Google Meat, agendamos o melhor método e dia através do WhatsApp!</p>
                 </details>
             </div>
         </section>
