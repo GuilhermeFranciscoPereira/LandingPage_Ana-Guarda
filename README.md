@@ -33,13 +33,7 @@
 
 ### `Commit realizado para alterações feitas pela cliente`
 
-### `./src/app/api/sendStudentEmail:` Alterado a validação para enviar o e-mail para a professora.
-
-### `./src/Sections/Plans/QuestionnaireModal:` Alterado às perguntas feitas ao usuário.
-
-### `./src/Sections/Plans:` Alterado os valores dos planos para a promoção
-
-### `./src/Sections/Faq:` Alterado as respostas das perguntas
+### `./src/Sections/Schedule:` Seção que apresenta para o usuário quais são os horários disponíveis que a professora possui para lecionar as aulas
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 
@@ -81,9 +75,10 @@
     - MainSection: Onde temos a primeira seção da tela
         - TypingWords: Criado somente para utilizar o 'use client' em uma parte menor do código, componente para a troca de palavras abaixo do subtitulo
     - Methodology: Esta seção apresenta a metodologia utilizada, destacando as etapas práticas e personalizadas usadas para garantir o aprendizado eficaz de conversação em inglês. O objetivo é mostrar de forma clara e visual como o aluno será conduzido ao progresso real.
-    - RealClassVideo: Adicionado a sessão para mostrar um pouco de uma aula real gravada. Utilizando o youtube e a URL vem através do .env
     - Plans: Criado a seção de planos mostrando os 3 planos principais: Pacote mensal; Aula avulsa; Mentoria VIP; e cada um possui o botão: 'Entrar em contato' que após ser clicado mostra o modal que está em:
         - QuestionnaireModal: Modal responsável por receber do usuário seus dados para definir seu nível de inglês e passar já formatado para a professora, enviando estes dados através de um método HTTP (POST) para a rota de src/app/api/sendStudentEmail
+    - RealClassVideo: Adicionado a sessão para mostrar um pouco de uma aula real gravada. Utilizando o youtube e a URL vem através do .env
+    - Schedule: Seção que apresenta para o usuário quais são os horários disponíveis que a professora possui para lecionar as aulas
     - Students: Mostra 3 alunos da professora e conta brevemente suas histórias
     - TargetAudience: Seção que apresenta as principais dores e motivações dos alunos, definindo claramente para quem as aulas são destinadas. Ajuda o visitante a se identificar e entender se a aula atende às suas necessidades.
     - WhyTakeClassWithMe: Seção onde mostra ao usuário os benefícios que a metodologia usada pela Ana é realmente útil, trazendo consigo dados real e com link para visualização completa.

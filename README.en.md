@@ -30,15 +30,7 @@
 
 ## 🛎️ Key updates in this commit
 
-### `Commit made for changes made by the client`
-
-### `./src/app/api/sendStudentEmail:` Changed the validation for sending the email to the teacher.
-
-### `./src/Sections/Plans/QuestionnaireModal:` Changed the questions asked to the user.
-
-### `./src/Sections/Plans:` Changed the plan prices for promotion
-
-### `./src/Sections/Faq:` Changed question answers
+### `./src/Sections/Schedule:` Section that shows the user the available times that the teacher has to teach classes
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 
@@ -83,6 +75,7 @@
     - Plans: Plans section showing the three main plans: Monthly Package; Single Class; VIP Mentoring. Each has a 'Entrar em contato' button, which, when clicked, displays the modal at:
         - QuestionnaireModal: Modal responsible for receiving user data to define their English level and send it formatted to the teacher, sending this data via an HTTP method (POST) to the src/app/api/sendStudentEmail route
     - RealClassVideo: Added a section to show a glimpse of a real recorded class. Using YouTube and the URL comes through .env.
+    - Schedule: Section that shows the user the available times that the teacher has to teach classes
     - Students: Shows 3 of the teacher's students and briefly tells their stories
     - TargetAudience: This section presents the main pain points and motivations of students, clearly defining who the classes are for. It helps the visitor identify themselves and understand if the class meets their needs.
     - WhyTakeClassWithMe: A section that shows the user the benefits of Ana's methodology, providing real data and a link for full viewing.

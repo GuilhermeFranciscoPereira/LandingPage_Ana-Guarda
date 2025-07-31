@@ -1,0 +1,122 @@
+.scheduleSection {
+    width: 100vw;
+    min-height: 100vh;
+    background: var(--background);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.scheduleSection>h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.scheduleSection>h2>span {
+    color: var(--purple-primary);
+}
+
+.scheduleSection>.table {
+    width: 90vw;
+    margin: 0 auto 2rem;
+    box-shadow: var(--box-shadow-default);
+    border-radius: 12px;
+    overflow: hidden;
+    border-collapse: collapse;
+    display: table;
+}
+
+.scheduleSection>.table>thead>tr {
+    background: var(--purple-primary);
+}
+
+.scheduleSection>.table>thead>tr>.emptyHeader {
+    width: 25%;
+}
+
+.scheduleSection>.table>thead>tr>.headerCell {
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+    min-width: 80px;
+}
+
+.scheduleSection>.table>tbody>.row {
+    background: var(--background);
+    transition: background 0.2s ease;
+}
+
+.scheduleSection>.table>tbody>.row:nth-child(even) {
+    background: rgba(118, 9, 77, 0.05);
+}
+
+.scheduleSection>.table>tbody>.row:hover {
+    background: rgba(118, 9, 77, 0.1);
+}
+
+.scheduleSection>.table>tbody>.row>.timeCell {
+    padding: 0.75rem 1rem;
+    font-weight: 500;
+    width: 25%;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.scheduleSection>.table>tbody>.row>.statusCell {
+    padding: 0.75rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.scheduleSection>.table>tbody>.row>.statusCell>.iconAvailable {
+    color: #28a745;
+    font-size: 1.25rem;
+}
+
+.scheduleSection>.table>tbody>.row>.statusCell>.iconUnavailable {
+    color: #dc3545;
+    font-size: 1.25rem;
+}
+
+@media screen and (max-width: 600px) {
+    .scheduleSection>.table {
+        position: relative;
+        display: block;
+        overflow-x: auto;
+    }
+
+    .scheduleSection>.table::after {
+        content: 'Role para o lado 👉';
+        display: block;
+        text-align: center;
+        margin-top: 0.5rem;
+        font-size: 2rem;
+        color: var(--text-color);
+        font-weight: 600;
+    }
+
+    .scheduleSection>.table>thead>tr>.headerCell,
+    .scheduleSection>.table>tbody>.row>.timeCell,
+    .scheduleSection>.table>tbody>.row>.statusCell {
+        padding: 0.5rem;
+        font-size: 0.85rem;
+    }
+
+    .scheduleSection>.table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .scheduleSection>.table>thead>tr>.emptyHeader,
+    .scheduleSection>.table>tbody>.row>.timeCell {
+        width: 80px;
+        min-width: 80px;
+        white-space: nowrap;
+    }
+}

@@ -6,7 +6,7 @@
     border-top: 4px solid var(--purple-primary);
 }
 
-.footerSection>.footerContainer {
+.footerSection > .footerContainer {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -15,7 +15,7 @@
     gap: 0.5rem;
 }
 
-.footerSection>.footerContainer>.footerText {
+.footerSection > .footerContainer > .footerText {
     margin: 0;
     font-size: .9rem;
     text-align: center;
@@ -24,11 +24,11 @@
     transition: opacity 0.2s ease;
 }
 
-.footerSection>.footerContainer>.footerText:hover {
+.footerSection > .footerContainer > .footerText:hover {
     opacity: 1;
 }
 
-.footerSection>.footerContainer>.footerText>.footerLink {
+.footerSection > .footerContainer > .footerText > .footerLink {
     color: var(--purple-primary);
     text-decoration: none;
     font-weight: 600;
@@ -36,7 +36,7 @@
     transition: color 0.2s ease;
 }
 
-.footerSection>.footerContainer>.footerText>.footerLink::after {
+.footerSection > .footerContainer > .footerText > .footerLink::after {
     content: '';
     position: absolute;
     left: 0;
@@ -47,16 +47,16 @@
     transition: width 0.3s ease;
 }
 
-.footerSection>.footerContainer>.footerText>.footerLink:hover {
+.footerSection > .footerContainer > .footerText > .footerLink:hover {
     color: var(--purple-primary);
 }
 
-.footerSection>.footerContainer>.footerText>.footerLink:hover::after {
+.footerSection > .footerContainer > .footerText > .footerLink:hover::after {
     width: 100%;
 }
 
 @media screen and (min-width: 600px) {
-    .footerSection>.footerContainer {
+    .footerSection > .footerContainer {
         flex-direction: row;
         justify-content: space-between;
     }
