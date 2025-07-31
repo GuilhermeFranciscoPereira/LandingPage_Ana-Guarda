@@ -33,7 +33,13 @@
 
 ### `Commit realizado para alterações feitas pela cliente`
 
-### `./src/Sections/Schedule:` Seção que apresenta para o usuário quais são os horários disponíveis que a professora possui para lecionar as aulas
+
+
+### `./src/Sections/Schedule:` Apenas novas alterações nos textos solicitado pela cliente, mudanças nos arquivos:
+- AbouWhoAmI;
+- Questionnaire;
+- Students;
+- WhyTakeClassWithMe;
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 

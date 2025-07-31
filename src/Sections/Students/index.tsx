@@ -39,7 +39,7 @@ export default function Students(): React.ReactElement {
                         <div className={styles.studentText}>
                             <div className={styles.contentTextStudent}>
                                 <h3>Marcelo Rocha</h3>
-                                <p>Marcelo aos 48 anos de idade, conta com a Ana para realizar suas viagens internacionais, tendo alguém para conversar mas também lhe auxiliar em momentos que não compreende a lingua inglesa, ou necessita dizer algo e não sabe como.</p>
+                                <p>Marcelo, 48 anos, empresário, conta com a Ana para auxilia-lo em viagens internacionais de negócios, participando inclusive de reuniões on line remotamente.</p>
                             </div>
                         </div>
                     </div>

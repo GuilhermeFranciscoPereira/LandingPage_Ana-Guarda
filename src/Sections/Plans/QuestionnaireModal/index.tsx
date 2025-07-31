@@ -164,7 +164,7 @@ export default function QuestionnaireModal({ planName, onClose }: Props): React.
                             </div>
 
                             <div className={styles.formGroup}>
-                                <label className={styles.label}>6️⃣ De 1 a 5, quão confortável você se sente falando inglês outra pessoa? (1 = Nada confortável / 5 = Super tranquilo)</label>
+                                <label className={styles.label}>6️⃣ De 1 a 5, quão confortável você se sente falando inglês com outra pessoa? (1 = Nada confortável / 5 = Super tranquilo)</label>
                                 <div className={styles.rating}>
                                     <input type="radio" id="star-5" name="question6" value="5" checked={form.question6 === '5'} onChange={() => handleChange('question6', '5')} />
                                     <label htmlFor="star-5">
@@ -248,9 +248,9 @@ export default function QuestionnaireModal({ planName, onClose }: Props): React.
                 )}
                 {step === 3 && (
                     <div className={styles.step}>
-                        <h2 className={styles.title}>🎉 Obrigada!</h2>
+                        <h2 className={styles.title}>🎉 Thanks!</h2>
                         <p className={styles.description}>
-                            Seus dados foram enviados com sucesso! Em até 48 horas úteis entrarei em contato no seu WhatsApp para já agendarmos o início da sua fluência!
+                            Seus dados foram enviados com sucesso! Em até 48 horas úteis entrarei em contato no seu WhatsApp!
                         </p>
                     </div>
                 )}

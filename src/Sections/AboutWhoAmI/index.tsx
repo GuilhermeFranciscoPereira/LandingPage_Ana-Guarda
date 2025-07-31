@@ -31,7 +31,7 @@ export default function AboutWhoAmI(): React.ReactElement {
                             <h2>Quem é <span>Ana Flávia Guarda?</span></h2>
                             <h3>
                                 <div data-aos="fade-left">
-                                    Prazer, eu sou a Ana!, estudo inglês há muitos anos e, ao longo desse tempo, tive experiências internacionais que transformaram minha forma de aprender — e de ensinar.
+                                    Prazer, eu sou a Ana!, estudo inglês há muitos anos e, ao longo desse tempo, tive muitas experiências inclusive internacionais que transformaram minha forma de aprender — e de ensinar.
                                     Entendi, na prática, que a conversação é o que realmente aproxima a gente da fluência e da autoconfiança com o idioma.
                                 </div>
                                 <br />
