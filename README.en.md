@@ -30,7 +30,11 @@
 
 ## 🛎️ Key updates in this commit
 
-### `./src/Sections/Schedule:` Section that shows the user the available times that the teacher has to teach classes
+### `./src/app/api/sendStudentEmail:` Changed the way the email body is sent, now showing the full question asked and the answer, for example:
+
+#### Before: 1 - Introduction:
+
+#### After: 1 - Can you introduce yourself in English without help?wwww
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 

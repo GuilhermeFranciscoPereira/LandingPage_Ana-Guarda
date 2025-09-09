@@ -31,15 +31,11 @@
 
 ## 🛎️ Atualizações principais deste commit
 
-### `Commit realizado para alterações feitas pela cliente`
+### `./src/app/api/sendStudentEmail:` Alterado a forma como é enviado o corpo do e-mail, onde agora mostra a pergunta completa que foi feita e a resposta, por exemplo:
 
+#### Antes: 1 - Apresentação:
 
-
-### `./src/Sections/Schedule:` Apenas novas alterações nos textos solicitado pela cliente, mudanças nos arquivos:
-- AbouWhoAmI;
-- Questionnaire;
-- Students;
-- WhyTakeClassWithMe;
+#### Depois: 1 – Você consegue se apresentar em inglês sem ajuda?
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
 

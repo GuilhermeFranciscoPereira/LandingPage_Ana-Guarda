@@ -52,12 +52,12 @@ export async function POST(request: NextRequest) {
         <section>
           <h2 style="border-bottom: 2px solid #2a9d8f; padding-bottom: 5px;">Respostas do Questionário</h2>
           <ul style="list-style: none; padding: 0; margin: 0;">
-            <li><strong>1 – Apresentação:</strong> ${body.question1}</li>
-            <li><strong>2 – How was your day?:</strong> ${body.question2}</li>
-            <li><strong>3 – Pedir café:</strong> ${body.question3}</li>
-            <li><strong>4 – Conversou em inglês:</strong> ${body.question4}</li>
-            <li><strong>5 – Aula toda em inglês:</strong> ${body.question5}</li>
-            <li><strong>6 – Conforto ao falar (1-5):</strong> ${body.question6}</li>
+            <li><strong>1 – Você consegue se apresentar em inglês sem ajuda?:</strong> ${body.question1}</li>
+            <li><strong>2 – Se alguém perguntasse “How was your day?”, você saberia como responder?:</strong> ${body.question2}</li>
+            <li><strong>3 – Imagina que você está numa cafeteria fora do Brasil e precisa pedir um café em inglês. Você conseguiria?:</strong> ${body.question3}</li>
+            <li><strong>4 – Você já tentou manter uma conversa em inglês?:</strong> ${body.question4}</li>
+            <li><strong>5 – Se a aula fosse toda em inglês, você conseguiria acompanhar?:</strong> ${body.question5}</li>
+            <li><strong>6 – De 1 a 5, quão confortável você se sente falando inglês com outra pessoa? (1 = Nada confortável / 5 = Super tranquilo):</strong> ${body.question6}</li>
           </ul>
         </section>
 
